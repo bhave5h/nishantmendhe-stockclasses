@@ -1,0 +1,204 @@
+{
+  "siteMeta": {
+    "title": "Nishant Mendhe || Stock Market Training Institute in Nagpur",
+    "description": "Master the stock market with our expert-led stock market classes in Nagpur. Unlock investment strategies and secure your financial future. Enroll today!",
+    "keywords": "Nishant Mendhe, Stock Market Training Institute in Nagpur, Stock Market Classes in Nagpur",
+    "schema": {
+      "@context": "https://schema.org/", 
+      "@type": "Product", 
+      "name": "Best Stock Market Training Institute in Nagpur",
+      "image": "https://www.nishantmendhe.in/assets/nishant.jpg",
+      "description": "Master the stock market with our expert-led stock market classes in Nagpur. Unlock investment strategies and secure your financial future. Enroll today!",
+      "brand": {
+        "@type": "Brand",
+        "name": "Nishant Mendhe"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.9",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Pradeep Prusty"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "748"
+      }
+    }
+  },
+  "about": {
+    "heading": "Join the Leading Stock Trading Institute in Nagpur",
+    "description": "Nishant Mendhe Stock Market Training Institute, located in Nagpur, India, specializes in comprehensive stock market training designed for traders at every skill level. Offering engaging share market classes, our institute equips participants with vital trading strategies and insights necessary for success in the financial markets. Our expert-led courses include specialized swing trading classes and broader stock market training, emphasizing practical knowledge and real-time trading experience. Join us for top-notch trading classes in Nagpur, and elevate your trading skills today. With a focus on hands-on learning, we prepare you to navigate the stock market with confidence and acumen. Advance your trading career with us!",
+    "stats": [
+      {
+        "label": "Stock Market Experience",
+        "value": "10 Years"
+      },
+      {
+        "label": "Satisfied Customers",
+        "value": "7K+"
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "benefits We offer",
+    "description": "We provide an immersive trading floor environment that features both advanced online classes and in-person training in small groups. Under the expert guidance of Nishant Mendhe, students gain hands-on experience in trading strategies, risk management, and market analysis, along with 6 months of access to a professional trading setup. If you are seeking practical experience in an authentic trading environment, our institute may be the ideal choice for you.",
+    "items": [
+      "Low-risk Trading Plan",
+      "Perfect Entry Timing",
+      "Risk Management",
+      "Emotional Discipline",
+      "Expert Guidance"
+    ]
+  },
+  "courses": [
+    {
+      "id": "4-in-1-technical-analysis",
+      "slug": "4-in-1-technical-analysis",
+      "title": "4 in 1 Technical Analysis Course",
+      "price": "₹30,000",
+      "description": "If you're serious about mastering stock trading and improving your financial skills, Nishant Mendhe's 4-in-1 Course at the Stock Market Training Institute in Nagpur is the perfect solution for you. This expertly designed course covers everything from low-risk, high-reward trading strategies and technical analysis with RSI to advanced technical chart patterns and Fibonacci trading techniques. By enrolling in this program, you'll acquire the knowledge and skills necessary to make informed investment decisions and propel your investment journey towards success. This share market course is available online only and includes daily webinars from Monday to Friday, 8 PM to 9 PM. The course lasts eight weeks, and you'll get six months of free mentorship and daily nifty and bank nifty chart analysis in a live webinar. Don't miss this opportunity to boost your trading skills and master the stock market with Nishant Mendhe's proven trading strategies!",
+      "curriculum": [
+        {
+          "title": "Week 1 of Low-risk and High-reward Trading",
+          "content": "Day 1 : Mind set, candles vs Bar , Risk Reword Ratio ,Succes ratio\nDay 2 : Trend\nDay 3 : Low-risk high-reward trading (Buy)\nDay 4 : Low-risk high-reward trading (Short)\nDay 5 : LR HR Inside Bar\nDay 6 : LR HR Outside Bar"
+        },
+        {
+          "title": "Week 2 of Option Trading",
+          "content": "Day 7 : Option Trading\nDay 8 : Option Trading\nDay 9 : Option Trading\nDay 10 : Option Trading\nDay 11 : RSI Indicator basic\nDay 12 : RSI strong buy"
+        },
+        {
+          "title": "Week 3 of RSI Indicator",
+          "content": "Day 13 : 40 Support\nDay 14 : 40 Support weekly\nDay 15 : 40 Monthly\nDay 16 : Daily 60 Support\nDay 17  : RSI 60 Résistance\nDay 18 : RSI 60 Resistance Weekly"
+        },
+        {
+          "title": "Week 4 of RSI Indicator",
+          "content": "Day 19 : 60 Bearish Range Shift\nDay 20 : 70 RSI Rocket Patterns \nDay 21 : Breakout with 60\nDay 22 : Weekly 60 and Monthly 60 Breakout\nDay 23 : Positional Buy stocks\nDay 24 : Positional Swing Buy ( 15 min)"
+        },
+        {
+          "title": "Week 5 of RSI Indicator",
+          "content": "Day 25 : Selected stocks and Entry\nDay 26 : RSI 1 Hour Buy\nDay 27 : RSI 45\nDay 28 : RSI - Intraday\nDay 29 : RSI - Intraday & Bullish stock for next day\nDay 30 : RSI Short Pattern Part 1"
+        },
+        {
+          "title": "Week 6 of RSI Indicator",
+          "content": "Day 31 : RSI Short Pattern Part 2\nDay 32 : Basic & Multiple Divergence\nDay 33 : RSI Bullish Hidden Divergence\nDay 34 : RSI Bearish Hidden Divergence \nDay 35 : RSI Multiple Bullish Hidden Divergence \nDay 36 : RSI Multiple Bearish Hidden Divergence"
+        },
+        {
+          "title": "Week 7 Avanced chart Patterns",
+          "content": "Day 37 : W Pattern\nDay 38 : M Pattern\nDay 39 : Inverted Head and Shoulder \nDay 40 : Head and Shoulder pattern\nDay 41 : Cup and Handle\nDay 42 : Bullish Rounding Bottom"
+        },
+        {
+          "title": "Week 8 Avanced chart Patterns",
+          "content": "Day 43 : Fake Breakout and Fake Breakdown\nDay 44 : Types of Flag\nDay 45 : Types of Breakout\nDay 46 : Up Flags\nDay 47 : Down Flags"
+        }
+      ]
+    },
+    {
+      "id": "beginners-guide",
+      "slug": "beginners-guide",
+      "title": "Beginner's Guide",
+      "description": "Covering essential topics such as market analysis, risk management, and trading psychology, this course provides a comprehensive understanding of the basics needed."
+    },
+    {
+      "id": "advanced-trading-strategies",
+      "slug": "advanced-trading-strategies",
+      "title": "Advanced Trading Strategies",
+      "description": "explore advanced charting techniques, and learn how to develop and implement effective trading strategies that can give you a competitive edge in the market."
+    },
+    {
+      "id": "technical-analysis-fundamentals",
+      "slug": "technical-analysis-fundamentals",
+      "title": "Technical Analysis Fundamentals",
+      "description": "including chart patterns, indicators, and trend analysis, enabling you to make informed trading decisions based on price action and market dynamics."
+    },
+    {
+      "id": "risk-management-strategies",
+      "slug": "risk-management-strategies",
+      "title": "Risk Management Strategies",
+      "description": "By mastering risk management strategies, you can safeguard your trading capital and minimize potential losses, ensuring long-term success in the stock market."
+    },
+    {
+      "id": "unlocking-potential",
+      "slug": "unlocking-your-stock-market-potential",
+      "title": "Unlocking Your Stock Market Potential",
+      "description": "By equipping yourself with a strong foundation of knowledge, you gain the ability to leverage the available tools effectively and transform your trading experience into one that yields greater returns."
+    },
+    {
+      "id": "options-trading-mastery",
+      "slug": "options-trading-mastery",
+      "title": "Options Trading Mastery",
+      "description": "Unlock the potential of options trading with our comprehensive course on mastering this specialized area of the stock market. From understanding the intricacies of options contracts to implementing advanced options strategies."
+    }
+  ],
+  "testimonials": [],
+  "faqs": [
+    {
+      "question": "What are the prerequisites for joining the stock market classes?",
+      "answer": "No prerequisites are necessary. Our classes are designed for all levels, from beginners to experienced traders."
+    },
+    {
+      "question": "What if I have questions during the course?",
+      "answer": "We encourage active participation and engagement. If you have any questions during the course, our instructors are readily available to provide guidance and clarification."
+    },
+    {
+      "question": "Is prior trading experience required to enroll in stock market course?",
+      "answer": "No, our courses cater to individuals with varying levels of experience, including beginners. Whether you have no prior trading knowledge or are an experienced trader looking to refine your skills, our courses are designed to accommodate your needs."
+    },
+    {
+      "question": "Can I learn at my own pace?",
+      "answer": "Yes, we offer flexible class schedules, allowing you to learn at your own pace. You can customize your learning journey according to your schedule and preferences."
+    },
+    {
+      "question": "Are there any prerequisites for the advanced course?",
+      "answer": "Yes, the advanced courses are designed for individuals with some prior trading experience."
+    }
+  ],
+  "contact": {
+    "email": "nishantmendhe24@gmail.com",
+    "social": {
+      "facebook": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute",
+      "linkedin": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/",
+      "youtube": "https://www.youtube.com/c/NishantMendhe1",
+      "twitter": "https://twitter.com/NishantMendhe11"
+    }
+  },
+  "media": [
+    "https://www.nishantmendhe.in/assets/nishant.jpg",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/logo-white.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/3.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/4.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(1).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(2).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/2.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(3).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/nishant.jpg",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/2(1).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(4).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/2(2).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/3(1).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/4(1).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/5.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/6.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(5).png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/apple.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/play.png",
+    "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(6).png"
+  ],
+  "ctas": [
+    {
+      "text": "Know More",
+      "link": "https://www.nishantmendhe.in/our-programs.html"
+    },
+    {
+      "text": "Explore More",
+      "link": "https://www.nishantmendhe.in/our-programs.html"
+    }
+  ]
+}
