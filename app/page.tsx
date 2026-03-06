@@ -1,6 +1,7 @@
 import content from "@/data/content.json";
 import Link from "next/link";
 import Image from "next/image";
+import heroImg from "@/public/Images/hero.png";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import ExploreButton from "@/components/ui/ExploreButton";
 import { FadeUp, FadeInOnLoad, StaggerContainer, StaggerItem, Counter } from "@/components/ui/motion";
@@ -66,7 +67,7 @@ export default function Home() {
           <div className="hidden lg:flex absolute bottom-0 right-0 w-[50%] items-end justify-end">
             <FadeInOnLoad delay={0.4} className="relative flex items-end justify-end">
               <Image
-                src="/images/hero.png"
+                src={heroImg}
                 alt="Hero Character"
                 width={800}
                 height={800}
