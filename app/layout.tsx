@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="font-['SF_Pro_Display',sans-serif] bg-white text-neutral-900 antialiased min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-1 pt-14 flex flex-col">
+        <main className="flex-1 flex flex-col">
           <PageTransition>
             {children}
           </PageTransition>

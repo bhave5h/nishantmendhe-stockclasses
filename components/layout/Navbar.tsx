@@ -19,10 +19,10 @@ export default function Navbar() {
             <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
                 <Link href="/" className="flex items-center">
                     <Image
-                        src="/Logo_f.png"
+                        src="/logo.svg"
                         alt="NM Logo"
-                        width={120} // Adjust width as needed
-                        height={60} // Adjust height as needed
+                        width={40} // Adjust width as needed
+                        height={40} // Adjust height as needed
                         priority
                     />
                 </Link>
