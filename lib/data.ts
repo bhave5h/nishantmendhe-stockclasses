@@ -12,18 +12,9 @@ export const coursesData = content.courses.map((course, index) => {
 
     const levelInfo = levelMap[index % 5];
 
-    // Fallback images in case there aren't specific ones
-    const imageList = [
-        "/Images/1.png",
-        "/Images/2.png",
-        "/Images/3.png",
-        "/Images/4.png",
-        "/Images/5.png",
-    ];
-
     return {
         ...course,
-        image: imageList[index % imageList.length],
+        image: course.image || "/Images/courses/c1.webp",
         level: levelInfo.level,
         levelColor: levelInfo.levelColor,
     };

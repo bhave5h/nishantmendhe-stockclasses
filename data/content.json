@@ -77,7 +77,12 @@
             "slug": "4-in-1-course",
             "title": "4 in 1 Course",
             "price": "₹30,000",
+            "image": "/Images/courses/c1.webp",
+            "duration": "2 Months",
+            "modules": "4 Modules",
+            "support": "Lifetime Support",
             "description": "Master trading with our comprehensive course covering Low Risk/High Reward, RSI Indicator, Chart Patterns, and Fibonacci Trading Expertise.",
+            "fullDescription": "Master trading with our comprehensive course covering Low Risk/High Reward, RSI Indicator, Chart Patterns, and Fibonacci Trading Expertise. This intensive program is designed for serious traders looking to elevate their market analysis and execution.",
             "curriculum": [
                 {
                     "title": "Module 1",
@@ -102,7 +107,12 @@
             "slug": "rsi-indicator",
             "title": "RSI Indicator",
             "price": "₹21,000",
+            "image": "/Images/courses/c2.webp",
+            "duration": "1 Month",
+            "modules": "2 Modules",
+            "support": "6 Months Support",
             "description": "Develop a deep understanding of the RSI Indicator, focusing on Divergence, Breakouts, and identifying crucial hidden shifts.",
+            "fullDescription": "Develop a deep understanding of the RSI Indicator, focusing on Divergence, Breakouts, and identifying crucial hidden shifts. Perfect your market timing and increase profitability with advanced momentum strategies.",
             "curriculum": [
                 {
                     "title": "Basics",
@@ -111,57 +121,6 @@
                 {
                     "title": "Advanced",
                     "content": "RSI divergences, hidden bullish/bearish patterns, and rocket setups."
-                }
-            ]
-        },
-        {
-            "id": "fibonacci-trading-expertise",
-            "slug": "fibonacci-trading-expertise",
-            "title": "Fibonacci Trading Expertise",
-            "price": "₹10,000",
-            "description": "Learn exactly when to enter and exit trades using powerful Fibonacci retracement and extension tools for maximum accuracy.",
-            "curriculum": [
-                {
-                    "title": "Basics",
-                    "content": "Core logic behind the Fibonacci sequence."
-                },
-                {
-                    "title": "Implementation",
-                    "content": "Applying extensions and retracements in live markets."
-                }
-            ]
-        },
-        {
-            "id": "chart-pattern-analysis-expertise",
-            "slug": "chart-pattern-analysis-expertise",
-            "title": "Chart Pattern Analysis Expertise",
-            "price": "₹15,000",
-            "description": "Master advanced technical chart patterns including Ws, Ms, Head & Shoulders, and complex flags to predict market movements.",
-            "curriculum": [
-                {
-                    "title": "Reversal Patterns",
-                    "content": "Head and shoulders, rounding bottoms, and cup & handle."
-                },
-                {
-                    "title": "Continuation Patterns",
-                    "content": "Bull and bear flags, fake breakouts, and triangles."
-                }
-            ]
-        },
-        {
-            "id": "low-risk-high-reward-study",
-            "slug": "low-risk-high-reward-study",
-            "title": "Low Risk–High Reward Study",
-            "price": "₹18,000",
-            "description": "Create bulletproof trading plans by minimizing risk exposure and significantly increasing potential reward systematically.",
-            "curriculum": [
-                {
-                    "title": "Risk Setup",
-                    "content": "Understanding risk-reward ratios and position sizing."
-                },
-                {
-                    "title": "Execution",
-                    "content": "Trading inside bars, outside bars, and identifying systemic risk."
                 }
             ]
         }
@@ -191,6 +150,7 @@
     ],
     "contact": {
         "email": "nishantmendhe24@gmail.com",
+        "phone": "+91 98765 43210",
         "social": {
             "facebook": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute",
             "linkedin": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/",
