@@ -2,13 +2,15 @@
 
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { coursesData } from '@/lib/data';
 
 
 export default function CourseDetails() {
     const params = useParams();
     const slug = params?.slug as string;
+    const [openModuleIndex, setOpenModuleIndex] = useState<number | null>(0);
 
     const course = coursesData.find(c => c.slug === slug || c.id === slug);
 
@@ -109,14 +111,54 @@ export default function CourseDetails() {
                             {course.curriculum && (
                                 <div className="mt-10">
                                     <h3 className="text-2xl font-bold mb-6 text-gray-900">Curriculum</h3>
-                                    <ul className="space-y-4">
-                                        {course.curriculum.map((module: any, idx: number) => (
-                                            <li key={idx} className="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm">
-                                                <h4 className="font-bold text-lg text-gray-900 mb-2">{module.title}</h4>
-                                                <p className="text-gray-600">{module.content}</p>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    <div className="flex flex-col space-y-4">
+                                        {course.curriculum.map((module: any, idx: number) => {
+                                            const isOpen = openModuleIndex === idx;
+                                            return (
+                                                <motion.div
+                                                    key={idx}
+                                                    initial={{ opacity: 0, y: 10 }}
+                                                    whileInView={{ opacity: 1, y: 0 }}
+                                                    viewport={{ once: true }}
+                                                    className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden"
+                                                >
+                                                    <button
+                                                        onClick={() => setOpenModuleIndex(isOpen ? null : idx)}
+                                                        className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
+                                                    >
+                                                        <span className="font-bold text-lg text-[#0F172A]">
+                                                            {module.title}
+                                                        </span>
+                                                        <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 ${isOpen ? 'bg-[#0F172A]' : 'bg-gray-50 border border-gray-200 group-hover:bg-gray-100'}`}>
+                                                            {isOpen ? (
+                                                                <svg className="w-5 h-5 text-white transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                                                                </svg>
+                                                            ) : (
+                                                                <svg className="w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                                </svg>
+                                                            )}
+                                                        </div>
+                                                    </button>
+                                                    <AnimatePresence>
+                                                        {isOpen && (
+                                                            <motion.div
+                                                                initial={{ height: 0, opacity: 0 }}
+                                                                animate={{ height: "auto", opacity: 1 }}
+                                                                exit={{ height: 0, opacity: 0 }}
+                                                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                            >
+                                                                <div className="px-6 pb-6 text-gray-600 whitespace-pre-line leading-relaxed">
+                                                                    {module.content}
+                                                                </div>
+                                                            </motion.div>
+                                                        )}
+                                                    </AnimatePresence>
+                                                </motion.div>
+                                            );
+                                        })}
+                                    </div>
                                 </div>
                             )}
 

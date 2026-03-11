@@ -34,7 +34,7 @@ export default function Hero() {
                     </FadeInOnLoad>
                     <FadeInOnLoad delay={0.3} className="w-full">
                         <p className="text-lg md:text-xl text-neutral-600 mb-10 max-w-xl leading-relaxed">
-                            {content.hero.description}
+                            {content.siteMeta.description}
                         </p>
                     </FadeInOnLoad>
                     <FadeInOnLoad delay={0.4} className="w-full">

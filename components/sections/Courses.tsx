@@ -17,7 +17,7 @@ export default function Courses() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-[36px] md:text-[44px] font-bold text-[#0F172A] leading-tight mb-6"
+                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-neutral-900 leading-[1.1]"
                     >
                         Premium Courses
                     </motion.h2>
