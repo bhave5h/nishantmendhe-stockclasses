@@ -136,3 +136,28 @@ export const Counter = ({
 
     return <motion.span>{rounded}</motion.span>;
 };
+
+export const SlideUpBg = ({
+    children,
+    delay = 0,
+    className = "",
+}: {
+    children: React.ReactNode;
+    delay?: number;
+    className?: string;
+}) => {
+    return (
+        <motion.div
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            transition={{
+                duration: 1.2,
+                ease: [0.21, 0.47, 0.32, 0.98],
+                delay: delay,
+            }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
+};

@@ -4,13 +4,13 @@ import Image from "next/image";
 import heroImg from "@/public/Images/hero.png";
 import bgImg from "@/public/Images/bg.png";
 import ExploreButton from "@/components/ui/ExploreButton";
-import { FadeInOnLoad, Counter } from "@/components/ui/motion";
+import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
 
 export default function Hero() {
     return (
         <section className="relative w-full overflow-hidden bg-white min-h-screen pt-14 flex flex-col">
             {/* Full Screen Background Layer */}
-            <div className="absolute inset-0 w-full h-full z-[0]">
+            <SlideUpBg className="absolute inset-0 w-full h-full z-[0]">
                 <Image
                     src={bgImg}
                     alt="Hero Background"
@@ -18,7 +18,7 @@ export default function Hero() {
                     className="object-cover object-bottom pointer-events-none"
                     priority
                 />
-            </div>
+            </SlideUpBg>
 
             {/* Grid Lines Background */}
             <div className="absolute inset-0 z-[1] bg-[linear-gradient(to_right,#e5e5e5_1px,transparent_1px),linear-gradient(to_bottom,#e5e5e5_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-90 pointer-events-none"></div>
@@ -29,12 +29,12 @@ export default function Hero() {
                 <div className="flex flex-col items-start justify-start text-left w-full lg:w-[50%] z-10 shrink-0">
                     <FadeInOnLoad delay={0.2} className="w-full">
                         <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold tracking-tight mb-6 max-w-2xl text-[#111111] leading-[1.1]">
-                            {content.about.heading}
+                            {content.hero.heading}
                         </h1>
                     </FadeInOnLoad>
                     <FadeInOnLoad delay={0.3} className="w-full">
                         <p className="text-lg md:text-xl text-neutral-600 mb-10 max-w-xl leading-relaxed">
-                            {content.siteMeta.description}
+                            {content.hero.description}
                         </p>
                     </FadeInOnLoad>
                     <FadeInOnLoad delay={0.4} className="w-full">

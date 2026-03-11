@@ -32,9 +32,23 @@
             }
         }
     },
-    "about": {
+    "hero": {
         "heading": "Join the Best Swing Trading Institute in Nagpur",
-        "description": "Nishant Mendhe Stock Market Training Institute, located in Nagpur, India, specializes in comprehensive stock market training designed for traders at every skill level. Offering engaging share market classes, our institute equips participants with vital trading strategies and insights necessary for success in the financial markets. Our expert-led courses include specialized swing trading classes and broader stock market training, emphasizing practical knowledge and real-time trading experience. Join us for top-notch trading classes in Nagpur, and elevate your trading skills today. With a focus on hands-on learning, we prepare you to navigate the stock market with confidence and acumen. Advance your trading career with us!",
+        "description": "Master the stock market with our expert-led stock market classes in Nagpur. Enroll today!",
+        "stats": [
+            {
+                "label": "Stock Market Experience",
+                "value": "10 Years"
+            },
+            {
+                "label": "Satisfied Customers",
+                "value": "7K+"
+            }
+        ]
+    },
+    "about": {
+        "heading": "About the Institute",
+        "description": "Nishant Mendhe Stock Market Training Institute, based in Nagpur, provides comprehensive stock market training for traders of all experience levels. Our programs are designed to help students understand the financial markets, build strong trading strategies, and gain practical market knowledge. __Through expert-led share market classes, including specialized swing trading sessions, we focus on real-world trading insights and hands-on learning. Our goal is to equip aspiring traders with the confidence, discipline, and skills needed to succeed in the stock market.__Join our trading classes in Nagpur and take the next step toward mastering the markets.",
         "stats": [
             {
                 "label": "Stock Market Experience",
@@ -47,7 +61,7 @@
         ]
     },
     "benefits": {
-        "heading": "benefits We offer",
+        "heading": "Benefits We Offer",
         "description": "We provide an immersive trading floor environment that features both advanced online classes and in-person training in small groups. Under the expert guidance of Nishant Mendhe, students gain hands-on experience in trading strategies, risk management, and market analysis, along with 6 months of access to a professional trading setup. If you are seeking practical experience in an authentic trading environment, our institute may be the ideal choice for you.",
         "items": [
             "Low-risk Trading Plan",
