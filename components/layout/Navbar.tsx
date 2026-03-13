@@ -11,6 +11,7 @@ export default function Navbar() {
         { name: "Courses", path: "/#courses" },
         { name: "About", path: "/#about" },
         { name: "FAQs", path: "/#faqs" },
+        { name: "Webinar", path: "/webinar" },
         { name: "Contact", path: "/contact" },
     ];
 
@@ -19,7 +20,7 @@ export default function Navbar() {
             <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
                 <Link href="/" className="flex items-center">
                     <Image
-                        src="/logo.svg"
+                        src="/images/logo.svg"
                         alt="NM Logo"
                         width={40} // Adjust width as needed
                         height={40} // Adjust height as needed

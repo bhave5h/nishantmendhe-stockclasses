@@ -22,6 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="font-['SF_Pro_Display',sans-serif] bg-white text-neutral-900 antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1 flex flex-col">

@@ -3,6 +3,7 @@ import About from "@/components/sections/About";
 import Benefits from "@/components/sections/Benefits";
 import Courses from "@/components/sections/Courses";
 import FAQs from "@/components/sections/FAQs";
+import Webinar from "@/app/webinar/page";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Benefits />
-
+      <Webinar />
       <Courses />
       <FAQs />
     </div>

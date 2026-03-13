@@ -67,14 +67,14 @@
     },
     "courses": [
         {
-            "id": "beginner-rsi",
-            "slug": "beginner-rsi",
-            "title": "Beginner RSI",
-            "price": "₹5,000",
+            "id": "TFC",
+            "slug": "TFC",
+            "title": "TFC - Trading Fundamentals Course",
+            "price": "₹1,000",
             "image": "/Images/courses/c1.webp",
-            "duration": "1 Month",
-            "modules": "2 Modules",
-            "support": "3 Months Support",
+            "duration": "10 Days",
+            "modules": "8 Modules",
+            "support": "1 Month Support",
             "level": "Beginner",
             "levelColor": "bg-sky-100 text-sky-700",
             "description": "An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups.",
@@ -115,10 +115,10 @@
             ]
         },
         {
-            "id": "advanced-rsi",
-            "slug": "advanced-rsi",
-            "title": "Advanced RSI",
-            "price": "₹15,000",
+            "id": "ATC",
+            "slug": "ATC",
+            "title": "ATC - Advannce Technical Master Course",
+            "price": "₹5,000",
             "image": "/Images/courses/c2.webp",
             "duration": "1 Month",
             "modules": "2 Modules",
@@ -228,5 +228,53 @@
             "text": "Explore More",
             "link": "https://www.nishantmendhe.in/our-programs.html"
         }
-    ]
+    ],
+    "webinar": {
+        "heading": "Join Nishant Mendhe for Stock Trading Basics",
+        "description": "Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.",
+        "learningTitle": "At this program, you will learn to:",
+        "learningPoints": [
+            "Understand the basics of the stock market and trading concepts",
+            "Apply simple, practical, and time-tested trading principles",
+            "Develop the right mindset and discipline needed for successful trading"
+        ],
+        "audienceText": "Whether you are a student, working professional, business owner, or a complete beginner, this program helps you gain clear understanding of stock trading from the ground up.",
+        "socialProof": "Thousands of learners have already benefited from this training and improved their financial knowledge and trading confidence.",
+        "urgency": "Seats are limited!!! Book your seat now.",
+        "ctaText": "Join Now !",
+        "ctaLink": "https://www.nishantmendhe.in/",
+        "speakerImage": "/Images/web1.png",
+        "backgroundImage": "/Images/paperbg.png",
+        "tagline": {
+            "handwritten": "Learn",
+            "bold": "STOCK MARKET BASICS"
+        },
+        "eventDetails": [
+            {
+                "icon": "calendar",
+                "label": "Date",
+                "value": "23 August 2025"
+            },
+            {
+                "icon": "clock",
+                "label": "Time",
+                "value": "10:00pm\n12:00am"
+            },
+            {
+                "icon": "location",
+                "label": "Venue",
+                "value": "Kavivarya Suresh Bhat Auditorium, Nagpur"
+            },
+            {
+                "icon": "live",
+                "label": "Live",
+                "value": "Youtube\n@realygreatsite"
+            },
+            {
+                "icon": "fee",
+                "label": "Registration Fees",
+                "value": "Free"
+            }
+        ]
+    }
 }
