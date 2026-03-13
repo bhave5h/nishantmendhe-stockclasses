@@ -1,7 +1,7 @@
 import content from "@/data/content.json";
 import { FadeUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 import Image from "next/image";
-import aboutImg from "@/public/Images/I.png"; // Or whichever represents the institute best
+import aboutImg from "@/public/Images/Hero/I.webp"; // Or whichever represents the institute best
 
 export default function About() {
     return (

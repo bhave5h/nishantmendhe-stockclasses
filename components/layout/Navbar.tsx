@@ -8,11 +8,11 @@ export default function Navbar() {
     const pathname = usePathname();
     const navLinks = [
         { name: "Home", path: "/" },
+        { name: "Webinar", path: "/webinar" },
+        { name: "Contact", path: "/contact" },
         { name: "Courses", path: "/#courses" },
         { name: "About", path: "/#about" },
         { name: "FAQs", path: "/#faqs" },
-        { name: "Webinar", path: "/webinar" },
-        { name: "Contact", path: "/contact" },
     ];
 
     return (
@@ -20,7 +20,7 @@ export default function Navbar() {
             <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
                 <Link href="/" className="flex items-center">
                     <Image
-                        src="/images/logo.svg"
+                        src="/Images/Logos/Small_logo.svg"
                         alt="NM Logo"
                         width={40} // Adjust width as needed
                         height={40} // Adjust height as needed

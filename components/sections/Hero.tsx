@@ -1,8 +1,8 @@
 import content from "@/data/content.json";
 import Link from "next/link";
 import Image from "next/image";
-import heroImg from "@/public/Images/hero.png";
-import bgImg from "@/public/Images/bg.png";
+import heroImg from "@/public/Images/Hero/hero.webp";
+import bgImg from "@/public/Images/BG/bg.webp";
 import ExploreButton from "@/components/ui/ExploreButton";
 import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
 

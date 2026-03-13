@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: content.siteMeta.description,
   keywords: content.siteMeta.keywords,
   icons: {
-    icon: "/Logo.png",
+    icon: "/Images/Logos/Icon.png",
   },
 };
 
