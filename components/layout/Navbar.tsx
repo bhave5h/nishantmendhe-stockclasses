@@ -12,7 +12,6 @@ export default function Navbar() {
         { name: "Contact", path: "/contact" },
         { name: "Courses", path: "/#courses" },
         { name: "About", path: "/#about" },
-        { name: "FAQs", path: "/#faqs" },
     ];
 
     return (
@@ -41,12 +40,7 @@ export default function Navbar() {
                     ))}
                 </ul>
                 <div className="flex items-center">
-                    <Link
-                        href="/#courses"
-                        className="text-xs bg-black text-white px-4 py-2 rounded-full font-medium shadow-sm hover:bg-neutral-800 transition-colors"
-                    >
-                        {content.ctas[0].text}
-                    </Link>
+                    
                 </div>
             </nav>
         </header>
