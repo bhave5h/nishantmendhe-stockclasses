@@ -32,7 +32,7 @@ export default function Footer() {
                                 src="/Images/Logos/Full_logo.svg"
                                 alt="Nishant Mendhe Logo"
                                 width={270}
-                                height={90}
+                                height={50}
                                 className="h-auto w-auto max-w-[270px]"
                             />
                         </Link>
