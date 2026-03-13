@@ -9,7 +9,7 @@ export default function Home() {
     <main className={`relative min-h-screen w-full overflow-x-hidden flex flex-col items-center pt-8 lg:pt-12 pb-8 ${montserrat.className} text-black`}>
       {/* Background */}
       <img
-        src="/images/BG/paperbg.webp"
+        src="/Images/BG/paperbg.webp"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover z-[-1] opacity-90"
       />
@@ -20,7 +20,7 @@ export default function Home() {
         <div className="order-1 lg:order-none lg:col-span-5 lg:col-start-8 lg:row-start-1 flex justify-center lg:justify-end items-end min-h-[300px] md:min-h-[400px] lg:min-h-[500px] z-10">
           <div className="relative w-full max-w-[350px] md:max-w-[450px] lg:max-w-[600px] flex justify-center lg:justify-end items-end">
             <img
-              src="/images/Hero/Hero.webp"
+              src="/Images/Hero/Hero.webp"
               alt="Nishant Mendhe"
               className="w-full h-auto object-contain object-bottom drop-shadow-2xl pt-10"
             />
