@@ -77,7 +77,7 @@
             "support": "1 Month",
             "level": "Beginner",
             "levelColor": "bg-sky-100 text-sky-700",
-            "description": "TFC - Trading fundamentals Course : An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups.",
+            "description": "Trading fundamentals Course : An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups.",
             "Note": "Note : For Recordings of TFC, Please Buy it from Nishant Mendhe.graphy.com",
             "Link": "https://nishantmendhe.graphy.com/courses/Trading-Fundamentals-Course-69b500bb320bcb388dbd9871",
             "fullDescription": "An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups. This course is perfect for those new to technical trading and want a robust foundation.",
@@ -121,9 +121,9 @@
             ]
         },
         {
-            "id": "ATC",
-            "slug": "ATC",
-            "title": "ATC - Advannce Technical Master Course",
+            "id": "ATM",
+            "slug": "ATM",
+            "title": "ATM - Advannce Technical Master Course",
             "price": "₹17,000",
             "image": "/Images/courses/c2.png",
             "duration": "1 Month",
@@ -195,8 +195,8 @@
         }
     ],
     "contact": {
-        "email": "nishantmendhe24@gmail.com",
-        "phone": "+91 98765 43210",
+        "email": "nishantmendhe@gmail.com",
+        "phone": "+91 7030444344",
         "social": {
             "facebook": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute",
             "linkedin": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/",
