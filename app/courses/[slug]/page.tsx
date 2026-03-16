@@ -46,7 +46,7 @@ export default function CourseDetails() {
         <main className="min-h-screen bg-white font-sans text-gray-900">
 
             {/* Hero Section of Course */}
-            <section className="relative w-full bg-white text-[#0F172A] pt-32 pb-20 md:pt-40 md:pb-32 border-b border-gray-100">
+            <section className="relative w-full bg-white text-[#0F172A] pt-32 pb-20 md:pt-25 md:pb-32 border-b border-gray-100">
                 <div className="max-w-[1280px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     <motion.div
@@ -63,6 +63,7 @@ export default function CourseDetails() {
                         <p className="text-lg md:text-xl text-gray-500 leading-relaxed max-w-xl">
                             {course.description}
                         </p>
+
 
                         <div className="mt-10 flex flex-wrap items-center gap-6">
                             <div className="flex flex-col">
@@ -106,8 +107,6 @@ export default function CourseDetails() {
                     <div className="lg:col-span-3">
                         <h2 className="text-3xl font-bold mb-8">Course Overview</h2>
                         <div className="prose prose-lg text-gray-600 max-w-none">
-                            <p className="leading-relaxed">{course.fullDescription || course.description}</p>
-
                             {course.curriculum && (
                                 <div className="mt-10">
                                     <h3 className="text-2xl font-bold mb-6 text-gray-900">Curriculum</h3>
@@ -162,7 +161,13 @@ export default function CourseDetails() {
                                 </div>
                             )}
 
-                            <p className="mt-6 leading-relaxed">
+                        <p className="mt-6 text-lg md:text-xl text-gray-500 leading-relaxed max-w-xl">
+                            {course.Note} <a href={course.Link} target="_blank" rel="noopener noreferrer" className="text-[#0F172A] font-bold underline">
+                                Nishant Mendhe.graphy.com
+                            </a>
+                        </p>
+
+                            <p className="mt-6 leading-relaxed text-lg md:text-xl text-gray-500">
                                 Enrollment simply takes a few moments. Fill out the application form with your details, and you will be directed to our official WhatsApp channel to finalize your registration and payment manually with our team.
                             </p>
                         </div>

@@ -1,7 +1,10 @@
 import { Calendar, Clock, MapPin, PlayCircle, IndianRupee, Megaphone } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import WebinarForm from "./WebinarForm";
-import heroImg from "@/public/Images/Hero/hero.webp";
+import heroImg from "@/public/Images/Hero/hero.png";
+import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
+import Image from "next/image";
+import bgImg from "@/public/Images/BG/bg.webp";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -9,11 +12,22 @@ export default function Home() {
   return (
     <main className={`relative min-h-screen w-full overflow-x-hidden flex flex-col items-center pt-8 lg:pt-12 pb-8 ${montserrat.className} text-black`}>
       {/* Background */}
-      <img
+      {/* <img
         src="/Images/BG/paperbg.webp"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover z-[-1] opacity-90"
-      />
+      /> */}
+                  <SlideUpBg className="absolute inset-0 w-full h-full z-[0]">
+                <Image
+                    src={bgImg}
+                    alt="Hero Background"
+                    fill
+                    className="object-cover object-bottom pointer-events-none"
+                    priority
+                />
+            </SlideUpBg>
+             <div className="absolute inset-0 z-[1] bg-[linear-gradient(to_right,#e5e5e5_1px,transparent_1px),linear-gradient(to_bottom,#e5e5e5_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-90 pointer-events-none"></div>
+
 
       <div className="flex flex-col lg:grid lg:grid-cols-12 w-full max-w-[1400px] mx-auto px-4 lg:px-12 relative z-10">
         

@@ -11,7 +11,6 @@ export default function Home() {
       <Hero />
       <About />
       <Benefits />
-      <Webinar />
       <Courses />
       <FAQs />
     </div>

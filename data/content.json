@@ -33,7 +33,7 @@
         }
     },
     "hero": {
-        "heading": "Join the Best Swing Trading Institute in Nagpur",
+        "heading": "Join the Best Swing Trading Institute in Center India",
         "description": "Master the stock market with our expert-led stock market classes in Nagpur. Enroll today!",
         "stats": [
             {
@@ -52,7 +52,7 @@
     },
     "about": {
         "heading": "About the Institute",
-        "description": "Nishant Mendhe Stock Market Training Institute, based in Nagpur, provides comprehensive stock market training for traders of all experience levels. Our programs are designed to help students understand the financial markets, build strong trading strategies, and gain practical market knowledge. __Through expert-led share market classes, including specialized swing trading sessions, we focus on real-world trading insights and hands-on learning. Our goal is to equip aspiring traders with the confidence, discipline, and skills needed to succeed in the stock market.__Join our trading classes in Nagpur and take the next step toward mastering the markets."
+        "description": "Nishant Mendhe Stock Market Training Institute, based in Center India, Nagpur provides comprehensive stock market training for traders of all experience levels. Our programs are designed to help students understand the financial markets, build strong trading strategies, and gain practical market knowledge. __Through expert-led share market classes, including specialized swing trading sessions, we focus on real-world trading insights and hands-on learning. Our goal is to equip aspiring traders with the confidence, discipline, and skills needed to succeed in the stock market.__Join our trading classes in Nagpur and take the next step toward mastering the markets."
     },
     "benefits": {
         "heading": "Benefits We Offer",
@@ -70,47 +70,53 @@
             "id": "TFC",
             "slug": "TFC",
             "title": "TFC - Trading Fundamentals Course",
-            "price": "₹1,000",
-            "image": "/Images/courses/c1.webp",
+            "price": "₹5,000",
+            "image": "/Images/courses/c1.png",
             "duration": "10 Days",
-            "modules": "8 Modules",
-            "support": "1 Month Support",
+            "modules": "9",
+            "support": "1 Month",
             "level": "Beginner",
             "levelColor": "bg-sky-100 text-sky-700",
-            "description": "An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups.",
+            "description": "TFC - Trading fundamentals Course : An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups.",
+            "Note": "Note : For Recordings of TFC, Please Buy it from Nishant Mendhe.graphy.com",
+            "Link": "https://nishantmendhe.graphy.com/courses/Trading-Fundamentals-Course-69b500bb320bcb388dbd9871",
             "fullDescription": "An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups. This course is perfect for those new to technical trading and want a robust foundation.",
             "curriculum": [
                 {
-                    "title": "Week 1 of Low-risk and High-reward Trading",
-                    "content": "Day 1 : Mind set, candles vs Bar , Risk Reword Ratio ,Succes ratio\nDay 2 : Trend\nDay 3 : Low-risk high-reward trading (Buy)\nDay 4 : Low-risk high-reward trading (Short)\nDay 5 : LR HR Inside Bar\nDay 6 : LR HR Outside Bar"
+                    "title": "Day 1 : Low-risk and High-reward Trading",
+                    "content": "1. Mind set \n2. candles vs Bar \n3. Rsik Reword Ratio \n4. Succes Ratio"
                 },
                 {
-                    "title": "Week 2 of Option Trading",
-                    "content": "Day 7 : Option Trading\nDay 8 : Option Trading\nDay 9 : Option Trading\nDay 10 : Option Trading\nDay 11 : RSI Indicator basic\nDay 12 : RSI strong buy"
+                    "title": "Day 2 : Trend",
+                    "content": "1. Up Trend \n2. Down And Sideways \n3. minor trend vs major trend"
                 },
                 {
-                    "title": "Week 3 of RSI Indicator",
-                    "content": "Day 13 : 40 Support\nDay 14 : 40 Support weekly\nDay 15 : 40 Monthly\nDay 16 : Daily 60 Support\nDay 17 : RSI 60 Résistance\nDay 18 : RSI 60 Resistance Weekly"
+                    "title": "Day 3 : Low-risk high-reward trading",
+                    "content": "5 Types Of buying Patterns"
                 },
                 {
-                    "title": "Week 4 of RSI Indicator",
-                    "content": "Day 19 : 60 Bearish Range Shift\nDay 20 : 70 RSI Rocket Patterns \nDay 21 : Breakout with 60\nDay 22 : Weekly 60 and Monthly 60 Breakout\nDay 23 : Positional Buy stocks\nDay 24 : Positional Swing Buy ( 15 min)"
+                    "title": "Day 4 : Low Risk High Reward trading",
+                    "content": "5 Types Of Bearish Patterns"
                 },
                 {
-                    "title": "Week 5 of RSI Indicator",
-                    "content": "Day 25 : Selected stocks and Entry\nDay 26 : RSI 1 Hour Buy\nDay 27 : RSI 45\nDay 28 : RSI - Intraday\nDay 29 : RSI - Intraday & Bullish stock for next day\nDay 30 : RSI Short Pattern Part 1"
+                    "title": "Day 5 : Inside bar vs Outside Bar",
+                    "content": "1. 4 types of inside bar \n2. 4 types of outside bar"
                 },
                 {
-                    "title": "Week 6 of RSI Indicator",
-                    "content": "Day 31 : RSI Short Pattern Part 2\nDay 32 : Basic & Multiple Divergence\nDay 33 : RSI Bullish Hidden Divergence\nDay 34 : RSI Bearish Hidden Divergence \nDay 35 : RSI Multiple Bullish Hidden Divergence \nDay 36 : RSI Multiple Bearish Hidden Divergence"
+                    "title": "Day 6 : RSI Indicator",
+                    "content": "Rsi Indicator Basic"
                 },
                 {
-                    "title": "Week 7 Avanced chart Patterns",
-                    "content": "Day 37 : W Pattern\nDay 38 : M Pattern\nDay 39 : Inverted Head and Shoulder \nDay 40 : Head and Shoulder pattern\nDay 41 : Cup and Handle\nDay 42 : Bullish Rounding Bottom"
+                    "title": "Day 7 : Rsi Indicator",
+                    "content": "RSI 40 Support"
                 },
                 {
-                    "title": "Week 8 Avanced chart Patterns",
-                    "content": "Day 43 : Fake Breakout and Fake Breakdown\nDay 44 : Types of Flag\nDay 45 : Types of Breakout\nDay 46 : Up Flags\nDay 47 : Down Flags"
+                    "title": "Day 8 : RSI Indicator",
+                    "content": "Rsi Weekly 40 Support \n Rsi Monthly 40 Support"
+                },
+                    {
+                    "title": "Day 9 : RSI",
+                    "content": "RSI Bullish Range Shift with Option"
                 }
             ]
         },
@@ -118,8 +124,8 @@
             "id": "ATC",
             "slug": "ATC",
             "title": "ATC - Advannce Technical Master Course",
-            "price": "₹5,000",
-            "image": "/Images/courses/c2.webp",
+            "price": "₹17,000",
+            "image": "/Images/courses/c2.png",
             "duration": "1 Month",
             "modules": "2 Modules",
             "support": "6 Months Support",
@@ -127,6 +133,8 @@
             "levelColor": "bg-indigo-100 text-indigo-700",
             "description": "Develop a deep understanding of the RSI Indicator, focusing on Divergence, Breakouts, and identifying crucial hidden shifts.",
             "fullDescription": "Develop a deep understanding of the RSI Indicator, focusing on Divergence, Breakouts, and identifying crucial hidden shifts. Perfect your market timing and increase profitability with advanced momentum strategies.",
+            "Note": "Note : For Recordings of ATC, Please Buy it from Nishant Mendhe.graphy.com",
+            "Link": "https://nishantmendhe.graphy.com/courses/Trading-Fundamentals-Course-69b500bb320bcb388dbd9871",
             "curriculum": [
                 {
                     "title": "Week 1 of Low-risk and High-reward Trading",
