@@ -15,7 +15,7 @@ const getIcon = (item: string) => {
 
 export default function Benefits() {
     return (
-        <section id="benefits" className="w-full py-24 md:py-32 px-6 bg-[#f5f5f7] relative">
+        <section id="benefits" className="w-full py-15 md:py-15 px-6 bg-[#f5f5f7] relative">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     <FadeUp className="w-full lg:w-1/2">
