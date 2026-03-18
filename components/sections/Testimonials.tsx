@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { Play, Star, Quote } from 'lucide-react';
 
 const shorts = [
-  { id: 'FvmSCoTIr1k', label: 'Student Story #1' },
-  { id: 'E8Cbxg3Laj8', label: 'Student Story #2' },
-  { id: 'lh3ep4uGYAI', label: 'Student Story #3' },
+  { id: 'FvmSCoTIr1k', label: 'Samartha' },
+  { id: 'E8Cbxg3Laj8', label: 'Pradeep' },
+  { id: 'lh3ep4uGYAI', label: 'Anil' },
 ];
 
 const testimonials = [
@@ -70,7 +70,6 @@ function ShortCard({ id, label, delay }: { id: string; label: string; delay: num
               {/* Bottom label */}
               <div className="absolute bottom-0 left-0 right-0 rounded-b-[20px] bg-gradient-to-t from-black/80 to-transparent px-4 py-4">
                 <p className="text-white text-sm font-semibold leading-snug">{label}</p>
-                <p className="text-gray-300 text-xs mt-0.5">NMS Trading</p>
               </div>
             </>
           ) : (

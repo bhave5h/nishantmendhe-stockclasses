@@ -7,17 +7,17 @@ import { coursesData } from '@/lib/data';
 
 export default function Courses() {
     return (
-        <section id="courses" className="w-full bg-white py-24 md:py-32">
-            <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <section id="courses" className="w-full bg-white py-10 md:py-15">
+            <div className="max-w-[1000px] mx-auto px-6 md:px-12">
 
                 {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+                <div className="text-center max-w-3xl mx-auto mb-10 md:mb-10">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-neutral-900 leading-[1.1]"
+                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3 text-neutral-900 leading-[1.1]"
                     >
                         Premium Courses
                     </motion.h2>
