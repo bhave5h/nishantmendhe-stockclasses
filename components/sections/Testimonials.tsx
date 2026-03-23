@@ -89,7 +89,7 @@ function ShortCard({ id, label, delay }: { id: string; label: string; delay: num
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="w-full bg-[#f8f9fc] py-24 md:py-15">
+    <section id="testimonials" className="w-full bg-[#f8f9fc] py-24 md:py-15 z-10">
       <div className="max-w-[1000px] mx-auto px-4 md:px-10">
 
         {/* Header */}

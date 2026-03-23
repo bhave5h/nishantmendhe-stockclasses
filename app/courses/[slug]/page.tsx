@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { coursesData } from '@/lib/data';
+import Testimonials from '@/components/sections/Testimonials';
 
 
 export default function CourseDetails() {
@@ -48,7 +49,6 @@ export default function CourseDetails() {
             {/* Hero Section of Course */}
             <section className="relative w-full bg-white text-[#0F172A] pt-32 pb-20 md:pt-25 md:pb-32 border-b border-gray-100">
                 <div className="max-w-[1280px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -173,6 +173,8 @@ export default function CourseDetails() {
                         </div>
                     </div>
 
+      
+
                     {/* Form */}
                     <div className="lg:col-span-2">
                         <div className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 sticky top-24">
@@ -209,6 +211,8 @@ export default function CourseDetails() {
 
                 </div>
             </section>
+
+     
 
         </main>
     );

@@ -2,10 +2,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import content from "@/data/content.json";
 
 export default function Navbar() {
     const pathname = usePathname();
+    const [isOpen, setIsOpen] = useState(false);
+
     const navLinks = [
         { name: "Home", path: "/" },
         { name: "Webinar", path: "/webinar" },
@@ -17,7 +21,7 @@ export default function Navbar() {
     return (
         <header className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-neutral-200/50 transition-colors duration-300">
             <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-                <Link href="/" className="flex items-center">
+                <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
                     <Image
                         src="/Images/Logos/Small_logo.svg"
                         alt="NM Logo"
@@ -39,10 +43,33 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
-                <div className="flex items-center">
-                    
-                </div>
+                
+                {/* Mobile Menu Toggle */}
+                <button
+                    className="md:hidden p-2 -mr-2 text-neutral-600 hover:text-black focus:outline-none"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
             </nav>
+
+            {/* Mobile Menu Dropdown */}
+            {isOpen && (
+                <div className="md:hidden absolute top-14 left-0 w-full bg-white border-b border-neutral-200/50 shadow-lg py-4 px-6 flex flex-col space-y-4">
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.name}
+                            href={link.path}
+                            className={`text-base font-medium transition-colors hover:text-black ${pathname === link.path ? "text-black" : "text-neutral-600"
+                                }`}
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </div>
+            )}
         </header>
     );
 }

@@ -1,35 +1,45 @@
+"use client";
+
 import { Calendar, Clock, MapPin, PlayCircle, IndianRupee, Megaphone } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import WebinarForm from "./WebinarForm";
 import heroImg from "@/public/Images/Hero/hero.png";
+import { motion } from 'framer-motion';
 import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
 import Image from "next/image";
 import bgImg from "@/public/Images/BG/bg.webp";
+import Testimonials from "@/components/sections/Testimonials";
+import WhatYouWillLearn from "@/components/sections/WhatYouWillLearn";
+import FreeResources from "@/components/sections/FreeResources";
+import WhyJoin from "@/components/sections/WhyJoin";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className={`relative min-h-screen w-full overflow-x-hidden flex flex-col items-center pt-8 lg:pt-12 pb-8 ${montserrat.className} text-black`}>
-      {/* Background */}
-      {/* <img
-        src="/Images/BG/paperbg.webp"
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-[-1] opacity-90"
-      /> */}
-                  <SlideUpBg className="absolute inset-0 w-full h-full z-[0]">
-                <Image
-                    src={bgImg}
-                    alt="Hero Background"
-                    fill
-                    className="object-cover object-bottom pointer-events-none"
-                    priority
-                />
-            </SlideUpBg>
-             <div className="absolute inset-0 z-[1] bg-[linear-gradient(to_right,#e5e5e5_1px,transparent_1px),linear-gradient(to_bottom,#e5e5e5_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-90 pointer-events-none"></div>
+
+    <SlideUpBg className="fixed top-0 left-0 w-full h-screen z-[0] pointer-events-none">
+      <Image
+        src={bgImg}
+        alt="Hero Background"
+        fill
+        className="object-cover object-top pointer-events-none"
+        priority
+        />
+    </SlideUpBg>
+  
+      
 
 
       <div className="flex flex-col lg:grid lg:grid-cols-12 w-full max-w-[1400px] mx-auto px-4 lg:px-12 relative z-10">
+        
+        {/* Mobile-only H1 (Order First on Mobile, Hidden on Desktop) */}
+        <div className="order-first md:hidden w-full pt-8 pb-2 z-10 text-center">
+          <h1 className="text-3xl font-extrabold tracking-tight">
+            Join Nishant Mendhe for Stock Trading Basics
+          </h1>
+        </div>
         
         {/* Image Content (Order 1 on Mobile, Right Column on Desktop) */}
         <div className="order-1 lg:order-none lg:col-span-5 lg:col-start-8 lg:row-start-1 flex justify-center lg:justify-end items-end min-h-[300px] md:min-h-[400px] lg:min-h-[500px] z-10">
@@ -99,14 +109,10 @@ export default function Home() {
         </div>
 
         {/* Text Content (Order 3 on Mobile, Left Column on Desktop) */}
-        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-8 lg:pt-16 pb-4 lg:pb-8 flex flex-col justify-center text-left md:text-center lg:text-left z-10">
-          <h1 className="text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight">
+        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-8 lg:pt-16 pb-4 pl-1 lg:pb-8 flex flex-col justify-center text-left md:text-center lg:text-left z-10">
+          <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight">
             Join Nishant Mendhe for Stock Trading Basics
           </h1>
-          
-          <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-gray-900">
-            Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.
-          </p>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
             <p className="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-black">At this program, you will learn to:</p>
@@ -126,12 +132,14 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Registration Form (Order 4 on Mobile, Bottom on Desktop) */}
-        <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 z-20">
+      </div>
+
+      <WhatYouWillLearn />
+      <Testimonials />
+      <FreeResources />
+              <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 p-6 z-10 mb-20">
           <WebinarForm />
         </div>
-
-      </div>
     </main>
   );
 }

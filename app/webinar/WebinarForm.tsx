@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function WebinarForm() {
 
@@ -48,83 +49,118 @@ export default function WebinarForm() {
   };
 
   return (
-    <div className="w-full bg-[#1c1c1c] text-white rounded-[20px] md:rounded-[24px] px-6 md:px-10 py-8 shadow-2xl">
-      <h2 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-tight">
-        Register for the Webinar
-      </h2>
+    <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto border border-neutral-100">
+      
+      {/* Left Column - Video & Branding */}
+      <div className="relative w-full md:w-1/2 min-h-[400px] md:min-h-auto flex flex-col justify-between p-8 overflow-hidden">
+        {/* Video Background */}
+        <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+            <source src="/Images/Webinar/w.mp4" type="video/mp4" />
+        </video>
 
-      <form
-        onSubmit={handleSubmit}
-        className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6"
-      >
+        {/* Overlay Gradients */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#ff7a00]/40 via-black/20 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none"></div>
 
-        {/* Name */}
-        <div className="flex flex-col gap-1">
-          <label className="text-sm text-gray-400 font-medium">Full Name</label>
-          <input
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            type="text"
-            placeholder="Enter your full name"
-            required
-            className="bg-[#2a2a2a] text-white placeholder-gray-500 rounded-[12px] px-4 py-3 text-base outline-none border border-transparent focus:border-[#5EBA3F]"
-          />
+        {/* Logo (Top Left) */}
+        <div className="relative z-20 flex items-center gap-3">
+           <div className="bg-white rounded-lg p-1">
+             <Image src="/Images/Logos/Small_logo.svg" alt="Nishant Mendhe" width={32} height={32} className="w-8 h-8 object-contain" />
+           </div>
+           <span className="text-white font-bold text-lg tracking-tight drop-shadow-md">Nishant Mendhe</span>
         </div>
 
-        {/* Phone */}
-        <div className="flex flex-col gap-1">
-          <label className="text-sm text-gray-400 font-medium">Phone Number</label>
-          <input
-            name="phone"
-            value={form.phone}
-            onChange={handleChange}
-            type="tel"
-            placeholder="Enter your phone number"
-            required
-            className="bg-[#2a2a2a] text-white placeholder-gray-500 rounded-[12px] px-4 py-3 text-base outline-none border border-transparent focus:border-[#5EBA3F]"
-          />
+        {/* Text (Bottom Left) */}
+        <div className="relative z-20 mt-auto pt-24 text-white">
+            <p className="text-sm md:text-base opacity-90 mb-2 font-medium">You can easily</p>
+            <h3 className="text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight drop-shadow-lg">
+                Get access your personal hub for clarity and trading mastery.
+            </h3>
         </div>
+      </div>
 
-        {/* Email */}
-        <div className="flex flex-col gap-1">
-          <label className="text-sm text-gray-400 font-medium">Email Address</label>
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            type="email"
-            placeholder="Enter your email address"
-            required
-            className="bg-[#2a2a2a] text-white placeholder-gray-500 rounded-[12px] px-4 py-3 text-base outline-none border border-transparent focus:border-[#5EBA3F]"
-          />
-        </div>
+      {/* Right Column - Form */}
+      <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-14 flex flex-col justify-center bg-white">
+        
+        {/* Tiny Orange Asterisk / Icon */}
+        <div className="text-[#ff7a00] text-4xl font-serif mb-1 leading-none mt-[-10px]">*</div>
 
-        {/* Profession */}
-        <div className="flex flex-col gap-1">
-          <label className="text-sm text-gray-400 font-medium">Profession</label>
-          <input
-            name="profession"
-            value={form.profession}
-            onChange={handleChange}
-            type="text"
-            placeholder="e.g. Student, Business Owner..."
-            required
-            className="bg-[#2a2a2a] text-white placeholder-gray-500 rounded-[12px] px-4 py-3 text-base outline-none border border-transparent focus:border-[#5EBA3F]"
-          />
-        </div>
+        <h2 className="text-2xl md:text-3xl font-extrabold text-neutral-900 mb-2 tracking-tight">
+          Register for Webinar
+        </h2>
+        <p className="text-sm text-neutral-500 mb-8 font-medium">
+          Access our live session, insights, and trading strategies — and keep your financial goals flowing in one place.
+        </p>
 
-        {/* Submit */}
-        <div className="sm:col-span-2 flex justify-center mt-2">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+
+          <div className="flex flex-col gap-1.5">
+            <label className="text-[13px] text-neutral-700 font-bold">Your name</label>
+            <input
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              type="text"
+              placeholder="e.g. John Doe"
+              required
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+            />
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <label className="text-[13px] text-neutral-700 font-bold">Your phone</label>
+            <input
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              type="tel"
+              placeholder="+91 9876543210"
+              required
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+            />
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <label className="text-[13px] text-neutral-700 font-bold">Your email</label>
+            <input
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              type="email"
+              placeholder="e.g. john@example.com"
+              required
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+            />
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <label className="text-[13px] text-neutral-700 font-bold">Profession</label>
+            <input
+              name="profession"
+              value={form.profession}
+              onChange={handleChange}
+              type="text"
+              placeholder="e.g. Student, Trader, IT Professional"
+              required
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+            />
+          </div>
+
           <button
             type="submit"
-            className="bg-[#5EBA3F] hover:bg-[#4da832] text-white font-bold text-lg md:text-xl py-3 px-14 md:px-20 rounded-[14px] shadow-lg"
+            className="mt-4 bg-[#0a0a0a] hover:bg-[#1f1f1f] text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98]"
           >
             Register Now
           </button>
-        </div>
 
-      </form>
+        </form>
+      </div>
     </div>
   );
 }

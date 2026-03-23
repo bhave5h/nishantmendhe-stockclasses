@@ -22,7 +22,7 @@ export default function Benefits() {
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-neutral-900 leading-[1.1]">
                             {content.benefits.heading}
                         </h2>
-                        <p className="text-neutral-500 text-lg leading-relaxed lg:pr-10">
+                        <p className="text-neutral-500 text-lg md:text-xl leading-relaxed lg:pr-10">
                             {content.benefits.description}
                         </p>
                     </FadeUp>
@@ -41,8 +41,6 @@ export default function Benefits() {
                                 );
                             })}
                         </StaggerContainer>
-
-                        {/* Decorative background blob */}
                        
                     </div>
                 </div>
