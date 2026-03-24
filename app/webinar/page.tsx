@@ -7,31 +7,30 @@ import heroImg from "@/public/Images/Hero/hero.png";
 import { motion } from 'framer-motion';
 import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
 import Image from "next/image";
-import bgImg from "@/public/Images/BG/bg.webp";
+import bgImg2 from "@/public/Images/BG/c.png";
 import Testimonials from "@/components/sections/Testimonials";
 import WhatYouWillLearn from "@/components/sections/WhatYouWillLearn";
 import FreeResources from "@/components/sections/FreeResources";
-import WhyJoin from "@/components/sections/WhyJoin";
+import RegisterBTn from "@/components/ui/Register_btn";
+import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`relative min-h-screen w-full overflow-x-hidden flex flex-col items-center pt-8 lg:pt-12 pb-8 ${montserrat.className} text-black`}>
+    <main className={`relative min-h-screen w-full overflow-x-hidden flex flex-col items-center pt-8 lg:pt-12 pb-8 bg-white ${montserrat.className} text-black`}>
 
-    <SlideUpBg className="fixed top-0 left-0 w-full h-screen z-[0] pointer-events-none">
+    <SlideUpBg className="absolute top-0 left-0 w-full h-[100vh] z-[0] pointer-events-none">
       <Image
-        src={bgImg}
+        src={bgImg2}
         alt="Hero Background"
         fill
-        className="object-cover object-top pointer-events-none"
+        className="object-cover object-top pointer-events-none  "
         priority
         />
     </SlideUpBg>
   
       
-
-
       <div className="flex flex-col lg:grid lg:grid-cols-12 w-full max-w-[1400px] mx-auto px-4 lg:px-12 relative z-10">
         
         {/* Mobile-only H1 (Order First on Mobile, Hidden on Desktop) */}
@@ -103,41 +102,49 @@ export default function Home() {
                   <span className="font-bold text-base md:text-lg leading-tight">Instagram, Facebook</span>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
 
         {/* Text Content (Order 3 on Mobile, Left Column on Desktop) */}
-        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-8 lg:pt-16 pb-4 pl-1 lg:pb-8 flex flex-col justify-center text-left md:text-center lg:text-left z-10">
+        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left pl-9 md:text-center lg:text-left z-10">
+          
           <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight">
-            Join Nishant Mendhe for Stock Trading Basics
+            Join Nishant Mendhe for Stock Trading Basicffs
           </h1>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
-            <p className="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-black">At this program, you will learn to:</p>
-            <ul className="text-base md:text-lg lg:text-xl space-y-1 font-medium text-gray-900 text-left inline-block">
+            <p className="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-black opacity-80">At this program, you will learn to:</p>
+            <ul className="text-base md:text-lg lg:text-xl space-y-1 font-medium text-black opacity-70 text-left inline-block">
               <li>• The basics of the stock market and trading concepts</li>
               <li>• Apply simple, practical, and time-tested trading principles</li>
               <li>• Develop the right mindset and discipline needed for successful trading</li>
             </ul>
           </div>
 
-          <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-gray-900">
+          <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-black opacity-70">
             Whether you are a student, working professional, business owner, or a complete beginner, this program helps you gain clear understanding of stock trading from the ground up.
           </p>
 
-          <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black">
+          <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80">
             Seats are limited!!! Book your seat now.
           </p>
         </div>
 
+
+      </div>
+
+      
+      <div className="flex flex-wrap items-center gap-6 mt-10">
+        <Link href="/webinar#registerform">
+          <RegisterBTn />
+        </Link>
       </div>
 
       <WhatYouWillLearn />
       <Testimonials />
       <FreeResources />
-              <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 p-6 z-10 mb-20">
+      <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
           <WebinarForm />
         </div>
     </main>

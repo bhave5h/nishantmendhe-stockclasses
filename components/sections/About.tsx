@@ -11,7 +11,7 @@ export default function About() {
                 {/* Left Side: Text and Stats */}
                 <div className="flex-1 flex flex-col items-start w-full">
                     <FadeUp>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-neutral-900 leading-[1.1]">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-neutral-900 opacity-90 leading-[1.1]">
                             {content.about.heading}
                         </h2>
                     </FadeUp>

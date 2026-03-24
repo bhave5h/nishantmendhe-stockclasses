@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { section } from "framer-motion/client";
 
 export default function WebinarForm() {
 
@@ -49,7 +50,8 @@ export default function WebinarForm() {
   };
 
   return (
-    <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto border border-neutral-100">
+    <section id="registerform">
+          <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto border border-neutral-100">
       
       {/* Left Column - Video & Branding */}
       <div className="relative w-full md:w-1/2 min-h-[400px] md:min-h-auto flex flex-col justify-between p-8 overflow-hidden">
@@ -162,5 +164,7 @@ export default function WebinarForm() {
         </form>
       </div>
     </div>
+    </section>
+
   );
 }

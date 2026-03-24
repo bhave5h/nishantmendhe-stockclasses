@@ -99,7 +99,7 @@ export default function Testimonials() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-2 text-neutral-900 leading-[1.1]"
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 text-neutral-900 opacity-80 leading-[1.1]"
                     >
                        What Our Students Say
                     </motion.h2>

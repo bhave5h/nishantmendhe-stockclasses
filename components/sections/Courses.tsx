@@ -17,7 +17,7 @@ export default function Courses() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3 text-neutral-900 leading-[1.1]"
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-3 text-neutral-900 opacity-80 leading-[1.1]"
                     >
                         Premium Courses
                     </motion.h2>
@@ -33,7 +33,7 @@ export default function Courses() {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto ">
                     {coursesData.map((course, index) => (
                         <motion.div
                             key={index}
@@ -41,7 +41,7 @@ export default function Courses() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.15 }}
-                            className="flex flex-col bg-white rounded-[24px] overflow-hidden border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300"
+                            className="flex flex-col bg-white rounded-[24px] overflow-hidden border border-gray-300 shadow-[0px_4px_47px_22px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_4px_47px_-17px_rgba(0,_0,_0,_0.1)] transition-shadow duration-300"
                         >
                             {/* Card Image */}
                             <div className="relative w-full aspect-[4/3] bg-gray-50 overflow-hidden">
@@ -70,11 +70,11 @@ export default function Courses() {
                                     {course.description}
                                 </p>
 
-                                <div className="pt-6 border-t border-gray-100 flex items-center justify-between mt-auto">
-                                    <span className="text-[24px] font-bold text-[#0F172A] tracking-tight">
+                                <div className="pt-1 border-t border-gray-100 flex items-center justify-between mt-auto">
+                                    <span className="text-[20px] font-bold text-[#0F172A] tracking-tight opacity-80">
                                         {course.price}
                                     </span>
-                                    <Link href={`/courses/${course.id}`} className="flex items-center gap-2 text-[14px] font-semibold text-[#0F172A] hover:text-gray-600 transition-colors group">
+                                    <Link href={`/courses/${course.id}`} className="flex items-center gap-2 text-[18px] font-semibold text-[#0F172A] hover:text-gray-600 transition-colors group opacity-80">
                                         Enroll Now
                                         <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

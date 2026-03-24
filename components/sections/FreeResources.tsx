@@ -11,8 +11,8 @@ export default function FreeResources() {
             <div className="max-w-[1000px] mx-auto px-6 md:px-12 flex flex-col items-center">
             
                 {/* Section Heading */}
-                <div className="text-center max-w-3xl mx-auto mb-10 md:mb-10">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 leading-[1.1]">
+                <div className="text-center max-w-3xl mx-auto mb-5 md:mb-10">
+                    <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold opacity-90 tracking-tight text-neutral-900 leading-[1.1]">
                         Explore our free resources
                     </h2>
                 </div>
@@ -28,8 +28,8 @@ export default function FreeResources() {
                 </a>
 
                 {/* Social Header */}
-                <div className="text-center max-w-3xl mx-auto mb-10 md:mb-10">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3 text-neutral-900 leading-[1.1]">
+                <div className="text-center max-w-3xl mx-auto mb-2 md:mb-10">
+                    <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold opacity-90 tracking-tight mb-3 text-neutral-900 leading-[1.1]">
                         {content.webinar.socialHeading}
                     </h2>
                     <p className="text-[16px] md:text-[18px] text-[#8e95a5] leading-relaxed font-normal">
@@ -50,10 +50,7 @@ export default function FreeResources() {
                                     className="w-full h-auto object-contain drop-shadow-[0_8px_25px_rgba(0,0,0,0.12)] transition-shadow duration-500 group-hover:drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]"
                                 />
                             </a>
-                            <a href={resource.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#1c1c1c] text-white px-6 py-3 rounded-full font-bold hover:bg-[#5EBA3F] hover:text-white transition-colors shadow-lg active:scale-95 w-full max-w-[200px]">
-                                {resource.iconName === "Youtube" && <Youtube className="w-5 h-5" />}
-                                {resource.iconName === "Facebook" && <Facebook className="w-5 h-5" />}
-                                {resource.iconName === "Linkedin" && <Linkedin className="w-5 h-5" />}
+                            <a href={resource.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#1c1c1c] text-white px-6 py-3 rounded-full font-bold hover:bg-[#5EBA3F] hover:text-white transition-color duration-300 shadow-lg active:scale-95 w-full max-w-[200px]">
                                 Visit {resource.name}
                             </a>
                         </div>

@@ -19,7 +19,7 @@ export default function Benefits() {
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     <FadeUp className="w-full lg:w-1/2">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-neutral-900 leading-[1.1]">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-neutral-900 opacity-90 leading-[1.1]">
                             {content.benefits.heading}
                         </h2>
                         <p className="text-neutral-500 text-lg md:text-xl leading-relaxed lg:pr-10">
@@ -36,7 +36,7 @@ export default function Benefits() {
                                         <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                                             <Icon className="w-6 h-6 text-accent" />
                                         </div>
-                                        <h4 className="text-lg font-semibold text-[#111111]">{item}</h4>
+                                        <h4 className="text-lg font-semibold text-black opacity-80">{item}</h4>
                                     </StaggerItem>
                                 );
                             })}

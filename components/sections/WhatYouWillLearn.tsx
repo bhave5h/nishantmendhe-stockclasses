@@ -27,12 +27,12 @@ export default function WhatYouWillLearn() {
                                 {lesson.title}
                             </h3>
                         </div>
-                        <div className="w-[40%] flex justify-end items-center relative h-30 md:h-40">
+                        <div className="w-[40%] flex justify-end items-center relative h-40 md:h-40">
                             <Image 
                                 src={lesson.image} 
                                 alt={lesson.title}
                                 fill
-                                className="object-contain object-right transition-transform duration-500 ease-out group-hover:scale-[1.4]"
+                                className="object-contain object-right transition-transform duration-500 ease-out group-hover:scale-[1.2]"
                             />
                         </div>
                     </div>

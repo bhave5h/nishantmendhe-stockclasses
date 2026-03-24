@@ -289,15 +289,16 @@
         "socialSubheading": "Follow us on Facebook and Instagram to stay in touch, and get the latest updates, news and messages as we continue to share the best business practices and strategies that work for us, in hopes that it can help you succeed as well.",
         "whatYouWillLearnCards": [
             { "id": 1, "title": "How to find multibagger stock", "image": "/Images/Webinar/w1.png" },
-            { "id": 2, "title": "How to use RSI Indicator", "image": "/Images/Webinar/w1.png" },
-            { "id": 3, "title": "Risk Management in Trading", "image": "/Images/Webinar/w1.png" },
-            { "id": 4, "title": "Building a Trading Psychology", "image": "/Images/Webinar/w1.png" },
-            { "id": 5, "title": "Building a Trading Psychology", "image": "/Images/Webinar/w1.png" }
+            { "id": 2, "title": "How to use RSI Indicator", "image": "/Images/Webinar/w2.png" },
+            { "id": 3, "title": "How to buy at bottom", "image": "/Images/Webinar/w3.png" },
+            { "id": 4, "title": "Rsi overbought does not mean sell", "image": "/Images/Webinar/w4.png" },
+            { "id": 5, "title": "RSI oversold is trap", "image": "/Images/Webinar/w5.png" },
+            { "id": 6, "title": "Free RSI multibagger scanner", "image": "/Images/Webinar/w6.png" }
         ],
         "freeResources": [
-            { "id": 1, "name": "YouTube", "description": "Free Video Resources", "link": "https://www.youtube.com/c/NishantMendhe1", "image": "/Images/Webinar/youtube.png", "iconName": "Youtube" },
-            { "id": 2, "name": "Facebook", "description": "Community Updates", "link": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute", "image": "/Images/Webinar/facebook.png", "iconName": "Facebook" },
-            { "id": 3, "name": "LinkedIn", "description": "Professional Network", "link": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/", "image": "/Images/Webinar/linkden.png", "iconName": "Linkedin" }
+            { "id": 1, "name": "Instagram", "description": "Follow for Updates", "link": "https://www.instagram.com/nisshantmenddhe.trader/", "image": "/Images/Webinar/youtube.png"},
+            { "id": 2, "name": "Facebook", "description": "Community Updates", "link": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute", "image": "/Images/Webinar/facebook.png"},
+            { "id": 3, "name": "LinkedIn", "description": "Professional Network", "link": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/", "image": "/Images/Webinar/linkden.png"}
         ]
     }
 }
