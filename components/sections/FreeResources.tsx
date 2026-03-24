@@ -18,7 +18,7 @@ export default function FreeResources() {
                 </div>
 
                 {/* Laptop Mockup */}
-                <a href={content.webinar.youtubeLink} target="_blank" rel="noopener noreferrer" className="w-full max-w-4xl flex justify-center mb-16 md:mb-24 relative hover:scale-[1.01] transition-transform duration-500 block">
+                <a href={content.webinar.youtubeLink} target="_blank" rel="noopener noreferrer" className="w-full max-w-4xl flex justify-center mb-5 md:mb-24 relative hover:scale-[1.01] transition-transform duration-500 block">
                     <Image 
                         src={ytMockup}
                         alt="YouTube Channel on Laptop"

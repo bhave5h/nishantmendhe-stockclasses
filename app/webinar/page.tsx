@@ -136,17 +136,17 @@ export default function Home() {
 
       
       <div className="flex flex-wrap items-center gap-6 mt-10">
-        <Link href="/webinar#registerform">
+        <Link href="#registerform">
           <RegisterBTn />
         </Link>
       </div>
 
       <WhatYouWillLearn />
-      <Testimonials />
-      <FreeResources />
       <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
-          <WebinarForm />
-        </div>
+        <WebinarForm />
+      </div>
+      <FreeResources />
+      <Testimonials />
     </main>
   );
 }

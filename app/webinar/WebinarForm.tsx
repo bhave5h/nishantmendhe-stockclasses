@@ -51,7 +51,7 @@ export default function WebinarForm() {
 
   return (
     <section id="registerform">
-          <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto border border-neutral-100">
+          <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-4xl mx-auto border border-neutral-100">
       
       {/* Left Column - Video & Branding */}
       <div className="relative w-full md:w-1/2 min-h-[400px] md:min-h-auto flex flex-col justify-between p-8 overflow-hidden">
@@ -88,16 +88,13 @@ export default function WebinarForm() {
       </div>
 
       {/* Right Column - Form */}
-      <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-14 flex flex-col justify-center bg-white">
+      <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-10 flex flex-col justify-center bg-white">
         
-        {/* Tiny Orange Asterisk / Icon */}
-        <div className="text-[#ff7a00] text-4xl font-serif mb-1 leading-none mt-[-10px]">*</div>
-
-        <h2 className="text-2xl md:text-3xl font-extrabold text-neutral-900 mb-2 tracking-tight">
+        <h2 className="text-2xl md:text-2xl font-bold text-neutral-900 mb-2 tracking-tight">
           Register for Webinar
         </h2>
-        <p className="text-sm text-neutral-500 mb-8 font-medium">
-          Access our live session, insights, and trading strategies — and keep your financial goals flowing in one place.
+        <p className="text-sm text-neutral-500 mb-3 font-medium">
+          Access our live session, insights, and trading strategies
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -111,7 +108,7 @@ export default function WebinarForm() {
               type="text"
               placeholder="e.g. John Doe"
               required
-              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
             />
           </div>
 
@@ -124,7 +121,7 @@ export default function WebinarForm() {
               type="tel"
               placeholder="+91 9876543210"
               required
-              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
             />
           </div>
 
@@ -137,7 +134,7 @@ export default function WebinarForm() {
               type="email"
               placeholder="e.g. john@example.com"
               required
-              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
             />
           </div>
 
@@ -150,13 +147,13 @@ export default function WebinarForm() {
               type="text"
               placeholder="e.g. Student, Trader, IT Professional"
               required
-              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-3 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+              className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
             />
           </div>
 
           <button
             type="submit"
-            className="mt-4 bg-[#0a0a0a] hover:bg-[#1f1f1f] text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98]"
+            className="mt-2 bg-[#0a0a0a] hover:bg-green-500 duration-300 text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98]"
           >
             Register Now
           </button>
