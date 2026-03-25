@@ -109,8 +109,8 @@ export default function Home() {
         {/* Text Content (Order 3 on Mobile, Left Column on Desktop) */}
         <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left pl-9 md:text-center lg:text-left z-10">
           
-          <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight">
-            Join Nishant Mendhe for Stock Trading Basicffs
+          <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight opacity-85 mb-2">
+            Join Nishant Mendhe for Stock Trading Basics
           </h1>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">

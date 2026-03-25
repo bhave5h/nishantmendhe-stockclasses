@@ -93,13 +93,13 @@ export default function Testimonials() {
       <div className="max-w-[1000px] mx-auto px-4 md:px-10">
 
         {/* Header */}
-         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        whileInView={{ opacity: 0.9, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 text-neutral-900 opacity-80 leading-[1.1]"
+                        className="text-4xl md:text-4xl lg:text-5xl font-bold opacity-90 tracking-tight mb-3 text-neutral-900 leading-[1.1]"
                     >
                        What Our Students Say
                     </motion.h2>
@@ -112,7 +112,7 @@ export default function Testimonials() {
                     >
                         Thousands of learners have taken their first confident step into stock trading with our guidance. Here’s what they have to say about their journey.
                     </motion.p>
-                </div>
+        </div>
 
         {/* 3 YouTube Shorts — responsive row */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-10">
