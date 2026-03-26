@@ -15,11 +15,11 @@ const getIcon = (item: string) => {
 
 export default function Benefits() {
     return (
-        <section id="benefits" className="w-full py-15 md:py-15 px-6 bg-[#f5f5f7] relative">
+        <section id="benefits" className="w-full py-15 md:py-15 px-6 bg-white relative">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col lg:flex-row gap-16 items-center">
+                <div className="flex flex-col lg:flex-row gap-16 items-top p-10">
                     <FadeUp className="w-full lg:w-1/2">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-neutral-900 opacity-90 leading-[1.1]">
+                        <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-2 text-neutral-900 opacity-90 leading-[1.1]">
                             {content.benefits.heading}
                         </h2>
                         <p className="text-neutral-500 text-lg md:text-xl leading-relaxed lg:pr-10">
@@ -33,8 +33,8 @@ export default function Benefits() {
                                 const Icon = getIcon(item);
                                 return (
                                     <StaggerItem key={item} className="bg-white p-6 rounded-3xl border border-neutral-100 shadow-sm hover:shadow-xl hover:border-accent/30 transition-all duration-300 group">
-                                        <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                                            <Icon className="w-6 h-6 text-accent" />
+                                        <div className="w-12 h-12 bg-accent/50 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                                            <Icon className="w-6 h-6 text-black" />
                                         </div>
                                         <h4 className="text-lg font-semibold text-black opacity-80">{item}</h4>
                                     </StaggerItem>

@@ -52,7 +52,7 @@ export default function Home() {
         </div>
 
         {/* Info Bar (Order 2 on Mobile, Bottom Full Width on Desktop) */}
-        <div className="order-2 lg:order-none lg:col-span-12 lg:row-start-2 w-full mt-[-2px] lg:mt-[-5px] z-20">
+        <div className="order-2 lg:order-none lg:col-span-12 lg:row-start-2 w-full mt-[-2px] lg:mt-[-5px] z-20 mb-10">
           <div className="w-full bg-[#1c1c1c] text-white rounded-[20px] md:rounded-[24px] px-5 md:px-8 py-6 shadow-2xl">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:flex xl:flex-row xl:justify-between gap-6 md:gap-8">
               
@@ -107,14 +107,14 @@ export default function Home() {
         </div>
 
         {/* Text Content (Order 3 on Mobile, Left Column on Desktop) */}
-        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left pl-9 md:text-center lg:text-left z-10">
+        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left p-9 md:text-center lg:text-left z-10">
           
           <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight opacity-85 mb-2">
             Join Nishant Mendhe for Stock Trading Basics
           </h1>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
-            <p className="text-lg md:text-xl lg:text-2xl font-bold mb-2 text-black opacity-80">At this program, you will learn to:</p>
+            <p className="text-[20px] md:text-xl lg:text-2xl font-bold mb-2 text-black opacity-80">At this program, you will learn to:</p>
             <ul className="text-base md:text-lg lg:text-xl space-y-1 font-medium text-black opacity-70 text-left inline-block">
               <li>• The basics of the stock market and trading concepts</li>
               <li>• Apply simple, practical, and time-tested trading principles</li>

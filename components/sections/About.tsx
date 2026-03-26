@@ -4,44 +4,46 @@ import Image from "next/image";
 import aboutImg from "@/public/Images/Hero/I.webp"; // Or whichever represents the institute best
 
 export default function About() {
-    return (
-        <section id="about" className="w-full py-24 md:py-20 px-6 bg-white relative">
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+  return (
+    <section
+      id="about"
+      className="w-full py-24 md:py-20 px-6 bg-white relative"
+    >
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 p-10">
+        {/* Left Side: Text and Stats */}
+        <div className="flex-1 flex flex-col items-start w-full">
+          <FadeUp>
+            <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-2 text-neutral-900 opacity-90 leading-[1.1]">
+              {content.about.heading}
+            </h2>
+          </FadeUp>
 
-                {/* Left Side: Text and Stats */}
-                <div className="flex-1 flex flex-col items-start w-full">
-                    <FadeUp>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-neutral-900 opacity-90 leading-[1.1]">
-                            {content.about.heading}
-                        </h2>
-                    </FadeUp>
-                    
-                    <FadeUp delay={0.1} className="w-full">
-                        <div className="text-neutral-500 text-lg md:text-xl leading-relaxed mb-0">
-                            {content.about.description.split("__").map((paragraph, idx) => (
-                                <p key={idx} className={idx > 0 ? "mt-4" : ""}>
-                                    {paragraph}
-                                </p>
-                            ))}
-                        </div>
-                    </FadeUp>
-
-                </div>
-
-                {/* Right Side: Image */}
-                <div className="flex-1 w-full flex items-center justify-center relative">
-                    <FadeUp delay={0.2} className="relative w-3/4 max-w-lg aspect-[4/5] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-xl">
-                        <Image
-                            src={aboutImg}
-                            alt="About the institute"
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-700"
-                        />
-                    </FadeUp>
-
-                </div>
-
+          <FadeUp delay={0.1} className="w-full">
+            <div className="text-neutral-500 text-lg md:text-xl leading-relaxed mb-0">
+              {content.about.description.split("__").map((paragraph, idx) => (
+                <p key={idx} className={idx > 0 ? "mt-4" : ""}>
+                  {paragraph}
+                </p>
+              ))}
             </div>
-        </section>
-    );
+          </FadeUp>
+        </div>
+
+        {/* Right Side: Image */}
+        <div className="flex-1 w-full flex items-center justify-center relative">
+          <FadeUp
+            delay={0.2}
+            className="content-left w-full md:w-full max-w-sm aspect-[4/5] rounded-[20px] md:rounded-[15px] overflow-hidden shadow-xl"
+          >
+            <Image
+              src={aboutImg}
+              alt="About the institute"
+              fill
+              className="rounded-lg object-cover hover:scale-105 transition-transform duration-700"
+            />
+          </FadeUp>
+        </div>
+      </div>
+    </section>
+  );
 }

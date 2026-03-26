@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { coursesData } from '@/lib/data';
-import Testimonials from '@/components/sections/Testimonials';
+
 
 
 export default function CourseDetails() {
