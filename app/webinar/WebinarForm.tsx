@@ -19,14 +19,20 @@ export default function WebinarForm() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (videoRef.current) {
-              videoRef.current.play().catch((err) => {
-                // If autoplay with audio is blocked by the browser, fallback to muted
-                setIsMuted(true);
-                if (videoRef.current) {
-                  videoRef.current.muted = true;
-                  videoRef.current.play().catch(console.error);
-                }
-              });
+              const playPromise = videoRef.current.play();
+              if (playPromise !== undefined) {
+                playPromise.catch((err) => {
+                  if (err.name === "NotAllowedError") {
+                    // Autoplay with audio was blocked
+                    setIsMuted(true);
+                  } else if (err.name === "AbortError") {
+                    // Play was interrupted, do nothing
+                    console.debug("Video play was aborted");
+                  } else {
+                    console.error("Video play failed:", err);
+                  }
+                });
+              }
             }
           } else {
             if (videoRef.current) {
@@ -132,6 +138,7 @@ export default function WebinarForm() {
             loop
             muted={isMuted}
             playsInline
+            preload="metadata"
             onClick={handleVideoClick}
             className="absolute inset-0 w-full h-full object-cover z-0 cursor-pointer"
           >
