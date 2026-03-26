@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { section } from "framer-motion/client";
+import { motion } from "framer-motion";
 
 export default function WebinarForm() {
   const [isMuted, setIsMuted] = useState(false);
@@ -100,14 +100,28 @@ export default function WebinarForm() {
 
   return (
     <section id="registerform">
-      <div className="text-center max-w-3xl mx-auto mb-2 md:mb-10">
-        <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold opacity-90 tracking-tight mb-3 text-neutral-900 leading-[1.1]">
-          Register for Webinar
-        </h2>
-        <p className="text-[16px] md:text-[18px] text-[#8e95a5] leading-relaxed font-normal">
-          Join our live session and learn about our trading strategies
-        </p>
-      </div>
+
+          {/* Header */}
+          <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="text-3xl md:text-3xl lg:text-4xl font-bold mb-3 text-neutral-800 leading-[1.1]"
+            >
+              Register for Webinar
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+              className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
+            >
+              Join our live session and learn about our trading strategies
+            </motion.p>
+          </div>
 
       <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-3xl mx-auto border border-neutral-100">
         {/* Left Column - Video & Branding */}

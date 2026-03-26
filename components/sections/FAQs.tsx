@@ -19,10 +19,10 @@ export default function FAQ() {
                 <div className="text-center mb-10 md:mb-10">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        whileInView={{ opacity: 0.9, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-3 text-neutral-900 leading-[1.1] opacity-80"
+                        className="text-4xl md:text-4xl lg:text-5xl font-semibold opacity-90 tracking-tight mb-3 text-neutral-900 leading-[1.1]"
                     >
                         Frequently Asked Questions
                     </motion.h2>

@@ -89,17 +89,17 @@ function ShortCard({ id, label, delay }: { id: string; label: string; delay: num
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="w-full bg-[#f8f9fc] py-24 md:py-15 z-10">
+    <section id="testimonials" className="w-full bg-white py-24 md:py-15 z-10">
       <div className="max-w-[1000px] mx-auto px-4 md:px-10">
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 0.9, y: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-4xl md:text-4xl lg:text-5xl font-bold opacity-90 tracking-tight mb-3 text-neutral-900 leading-[1.1]"
+                        className="text-3xl md:text-3xl lg:text-4xl font-bold mb-3 text-neutral-800 leading-[1.1]"
                     >
                        What Our Students Say
                     </motion.h2>
@@ -108,14 +108,14 @@ export default function Testimonials() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-                        className="text-[16px] md:text-[18px] text-[#8e95a5] leading-relaxed font-normal"
+                        className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
                     >
                         Thousands of learners have taken their first confident step into stock trading with our guidance. Here’s what they have to say about their journey.
                     </motion.p>
         </div>
 
         {/* 3 YouTube Shorts — responsive row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-6 mb-10">
           {shorts.map((s, i) => (
             <div key={s.id} className="w-full max-w-xs mx-auto sm:max-w-none">
               <ShortCard id={s.id} label={s.label} delay={i * 0.12} />
@@ -124,7 +124,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonial Cards — responsive grid below */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:p-0 lg:grid-cols-3 gap-4 p-6">
           {testimonials.map((t, index) => (
             <motion.div
               key={index}
@@ -132,9 +132,9 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.12 }}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+              className="bg-neutal-100 rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
-              <Quote className="w-6 h-6 text-[#5EBA3F] mb-3 opacity-70" />
+              <Quote className="w-6 h-6 text-black mb-3 opacity-70" />
 
               <div className="flex gap-1 mb-3">
                 {Array.from({ length: t.rating }).map((_, i) => (
@@ -142,7 +142,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-[15px] text-[#374151] leading-relaxed mb-4">
+              <p className="text-[15px] text-neutral-700 font-semibold leading-relaxed mb-4">
                 &ldquo;{t.text}&rdquo;
               </p>
 
