@@ -1,9 +1,12 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Facebook, Linkedin, Youtube, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 import content from "@/data/content.json";
 
 export default function Footer() {
+    const pathname = usePathname();
     const { social, email, phone } = content.contact;
 
     // Map platform names to Lucide icons
@@ -72,11 +75,11 @@ export default function Footer() {
                     <div className="lg:col-span-2 lg:col-start-6">
                         <h4 className="text-white font-semibold mb-6 tracking-wide">Quick Links</h4>
                         <ul className="space-y-4">
-                            <li><Link href="/#courses" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Premium Courses</Link></li>
-                            <li><Link href="/#about" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">About Us</Link></li>
+                            <li><Link href={pathname === "/" ? "#courses" : "/#courses"} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Premium Courses</Link></li>
+                            <li><Link href={pathname === "/" ? "#about" : "/#about"} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">About Us</Link></li>
                             <li><Link href="/webinar" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Webinar</Link></li>
                             <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Contact</Link></li>
-                            <li><Link href="/#faqs" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">FAQs</Link></li>
+                            <li><Link href={pathname === "/" ? "#faqs" : "/#faqs"} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">FAQs</Link></li>
                         </ul>
                     </div>
 

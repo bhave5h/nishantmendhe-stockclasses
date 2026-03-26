@@ -76,6 +76,10 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased selection:bg-neutral-200 selection:text-black;
    font-family: 'SF Pro Display', sans-serif;

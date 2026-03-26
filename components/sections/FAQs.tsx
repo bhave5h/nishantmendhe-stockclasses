@@ -12,7 +12,7 @@ export default function FAQ() {
     };
 
     return (
-        <section id="faq" className="w-full bg-white py-10 md:py-15">
+        <section id="faqs" className="w-full bg-white py-10 md:py-15">
             <div className="max-w-[1000px] mx-auto px-4 md:px-10">
 
                 {/* Header */}

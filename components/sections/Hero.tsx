@@ -39,7 +39,7 @@ export default function Hero() {
                     </FadeInOnLoad>
                     <FadeInOnLoad delay={0.4} className="w-full">
                         <div className="flex flex-wrap items-center gap-6">
-                            <Link href="/#courses">
+                            <Link href="#courses">
                                 <ExploreButton />
                             </Link>
                         </div>

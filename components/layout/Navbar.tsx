@@ -18,6 +18,13 @@ export default function Navbar() {
         { name: "About", path: "/#about" },
     ];
 
+    const getHref = (path: string) => {
+        if (pathname === "/" && path.startsWith("/#")) {
+            return path.substring(1);
+        }
+        return path;
+    };
+
     return (
         <header className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-neutral-200/50 transition-colors duration-300">
             <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
@@ -34,7 +41,7 @@ export default function Navbar() {
                     {navLinks.map((link) => (
                         <li key={link.name}>
                             <Link
-                                href={link.path}
+                                href={getHref(link.path)}
                                 className={`text-sm transition-colors hover:text-black ${pathname === link.path ? "text-black font-medium" : "text-neutral-500"
                                     }`}
                             >
@@ -60,7 +67,7 @@ export default function Navbar() {
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
-                            href={link.path}
+                            href={getHref(link.path)}
                             className={`text-base font-medium transition-colors hover:text-black ${pathname === link.path ? "text-black" : "text-neutral-600"
                                 }`}
                             onClick={() => setIsOpen(false)}
