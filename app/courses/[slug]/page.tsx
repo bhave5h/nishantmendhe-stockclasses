@@ -57,11 +57,19 @@ export default function CourseDetails() {
           return;
         }
 
+        const email = (formData.get('email') as string) || '';
+
         // Fetch Order ID from Next.js API
         const data = await fetch("/api/razorpay", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ amount })
+          body: JSON.stringify({
+              amount,
+              courseName: course.title,
+              userName: name,
+              userPhone: phone,
+              userEmail: email
+          })
         }).then((t) => t.json());
 
         if (data.error) {
@@ -80,6 +88,13 @@ export default function CourseDetails() {
           prefill: {
               name: name,
               contact: phone,
+              email: email,
+          },
+          notes: {
+              Course: course.title,
+              Name: name,
+              Phone: phone,
+              Email: email || "Not Provided"
           },
           handler: async function (response: any) {
             const req = {
@@ -257,6 +272,10 @@ export default function CourseDetails() {
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                                     <input required type="text" id="name" name="name" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0F172A] focus:border-transparent transition-all" placeholder="John Doe" />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input required type="email" id="email" name="email" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0F172A] focus:border-transparent transition-all" placeholder="john@example.com" />
                                 </div>
                                 <div>
                                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
