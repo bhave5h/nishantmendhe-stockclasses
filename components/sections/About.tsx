@@ -1,5 +1,5 @@
 import content from "@/data/content.json";
-import { FadeUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
+import { FadeUp } from "@/components/ui/motion";
 import Image from "next/image";
 import aboutImg from "@/public/Images/Hero/I.webp"; // Or whichever represents the institute best
 
@@ -10,7 +10,7 @@ export default function About() {
       className="w-full py-24 md:py-20 px-6 bg-white relative"
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 p-10">
-        {/* Left Side: Text and Stats */}
+        {/* Left Side: Text */}
         <div className="flex-1 flex flex-col items-start w-full">
           <FadeUp>
             <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-2 text-neutral-900 opacity-90 leading-[1.1]">
@@ -32,8 +32,8 @@ export default function About() {
         {/* Right Side: Image */}
         <div className="flex-1 w-full flex items-center justify-center relative">
           <FadeUp
-            delay={0.2}
-            className="content-left w-full md:w-full max-w-sm aspect-[4/5] rounded-[20px] md:rounded-[15px] overflow-hidden shadow-xl"
+            delay={0.5}
+            className="relative w-full md:w-full max-w-sm aspect-[4/5] rounded-[20px] md:rounded-[15px] overflow-hidden shadow-xl"
           >
             <Image
               src={aboutImg}
