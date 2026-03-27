@@ -5,7 +5,7 @@ import shortid from "shortid";
 
 export async function POST(req: Request) {
   try {
-    const { amount, name, phone, courseTitle } = await req.json();
+    const { amount } = await req.json();
 
     const razorpay = new Razorpay({
       key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY!,
@@ -21,11 +21,6 @@ export async function POST(req: Request) {
       currency,
       receipt: shortid.generate(),
       payment_capture,
-      notes: {
-        name: name || "Unknown Name",
-        phone: phone || "Unknown Phone",
-        course: courseTitle || "Unknown Course"
-      }
     };
 
     const response = await razorpay.orders.create(options);

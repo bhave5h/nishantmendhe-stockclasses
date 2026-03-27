@@ -61,7 +61,7 @@ export default function CourseDetails() {
         const data = await fetch("/api/razorpay", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ amount, name, phone, courseTitle: course.title })
+          body: JSON.stringify({ amount })
         }).then((t) => t.json());
 
         if (data.error) {
