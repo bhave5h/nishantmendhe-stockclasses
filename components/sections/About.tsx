@@ -9,7 +9,7 @@ export default function About() {
       id="about"
       className="w-full py-5 md:py-20 px-6 bg-white relative"
     >
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 p-10">
+      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-16 p-10">
         {/* Left Side: Text */}
         <div className="flex-1 flex flex-col items-start w-full">
           <FadeUp>

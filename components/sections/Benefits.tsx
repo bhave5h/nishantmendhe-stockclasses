@@ -16,7 +16,7 @@ const getIcon = (item: string) => {
 export default function Benefits() {
     return (
         <section id="benefits" className="w-full py-2 md:py-15 px-6 bg-white relative">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-16 items-top p-10">
                     <FadeUp className="w-full lg:w-1/2">
                         <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-2 text-neutral-900 opacity-90 leading-[1.1]">

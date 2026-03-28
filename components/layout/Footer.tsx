@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Facebook, Linkedin, Youtube, Twitter, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Linkedin, Youtube, Twitter, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import content from "@/data/content.json";
 
 export default function Footer() {
@@ -12,6 +12,7 @@ export default function Footer() {
     // Map platform names to Lucide icons
     const getSocialIcon = (platform: string) => {
         switch (platform.toLowerCase()) {
+            case 'instagram': return <Instagram className="w-5 h-5" />;
             case 'facebook': return <Facebook className="w-5 h-5" />;
             case 'linkedin': return <Linkedin className="w-5 h-5" />;
             case 'youtube': return <Youtube className="w-5 h-5" />;

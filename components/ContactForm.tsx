@@ -44,18 +44,38 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const formData = new FormData();
+      formData.append("access_key", "37f8fbeb-a539-47d5-a556-d83b7925a666");
+      formData.append("name", values.name);
+      formData.append("email", values.email);
+      formData.append("phone", values.phone);
+      formData.append("message", values.message);
 
-    console.log(values);
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    form.reset();
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
 
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setIsSuccess(false);
-    }, 5000);
+      const data = await response.json();
+      
+      if (data.success) {
+        setIsSuccess(true);
+        form.reset();
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 5000);
+      } else {
+        alert("Error submitting form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Error submitting form. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (isSuccess) {
