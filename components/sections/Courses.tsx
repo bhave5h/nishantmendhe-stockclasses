@@ -23,10 +23,10 @@ export default function Courses() {
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 0.8, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-              className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
+              className="text-md md:text-[18px] text-neutral-500 font-bold tracking-wide"
             >
               Structured learning paths designed for every stage of your trading journey. From absolute basics to advanced institutional strategies.
             </motion.p> 

@@ -70,7 +70,7 @@
             "id": "TFC",
             "slug": "TFC",
             "title": "TFC - Trading Fundamentals Course",
-            "price": "₹1",
+            "price": "₹1000",
             "image": "/Images/courses/c1.png",
             "duration": "10 Days",
             "modules": "9",
@@ -124,7 +124,7 @@
             "id": "ATM",
             "slug": "ATM",
             "title": "ATM - Advannce Technical Master Class",
-            "price": "₹17,000",
+            "price": "₹16,999",
             "image": "/Images/courses/c2.png",
             "duration": "1 Month",
             "modules": "2 Modules",
@@ -270,13 +270,13 @@
             },
             {
                 "icon": "location",
-                "label": "Venue",
-                "value": "Kavivarya Suresh Bhat Auditorium, Nagpur"
+                "label": "Platform",
+                "value": "Online, Google Meet"
             },
             {
                 "icon": "live",
                 "label": "Live",
-                "value": "Youtube\n@realygreatsite"
+                "value": "Youtube\n@NishantMendhe"
             },
             {
                 "icon": "fee",

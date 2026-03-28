@@ -36,6 +36,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function CourseLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+export default async function CourseLayout({ children, params }: { children: React.ReactNode, params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const course = coursesData.find((c) => c.slug === resolvedParams.slug || c.id === resolvedParams.slug);
+
+  const courseSchema = course ? {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": course.title,
+    "description": course.description || course.fullDescription,
+    "provider": {
+      "@type": "Organization",
+      "name": "Nishant Mendhe",
+      "sameAs": "https://www.nishantmendhe.in"
+    }
+  } : null;
+
+  return (
+    <>
+      {courseSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+        />
+      )}
+      {children}
+    </>
+  );
 }

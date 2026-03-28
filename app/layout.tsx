@@ -52,10 +52,26 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(content.siteMeta.schema) }}
+          dangerouslySetInnerHTML={{
+             __html: JSON.stringify([
+               content.siteMeta.schema,
+               {
+                 "@context": "https://schema.org",
+                 "@type": "FAQPage",
+                 "mainEntity": content.faqs.map((faq) => ({
+                   "@type": "Question",
+                   "name": faq.question,
+                   "acceptedAnswer": {
+                     "@type": "Answer",
+                     "text": faq.answer,
+                   },
+                 })),
+               }
+             ])
+          }}
         />
       </head>
-      <body className="font-['SF_Pro_Display',sans-serif] bg-white text-neutral-900 antialiased min-h-screen flex flex-col">
+      <body className="font-['Helvetica Neue',sans-serif] bg-white text-neutral-900 antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1 flex flex-col">
           <PageTransition>

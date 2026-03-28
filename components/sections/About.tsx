@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full py-24 md:py-20 px-6 bg-white relative"
+      className="w-full py-5 md:py-20 px-6 bg-white relative"
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 p-10">
         {/* Left Side: Text */}
