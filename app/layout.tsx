@@ -7,7 +7,7 @@ import content from "@/data/content.json";
 import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nishantmendhe.in"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: content.siteMeta.title,
   description: content.siteMeta.description,
   keywords: content.siteMeta.keywords,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: content.siteMeta.title,
     images: [
       {
-        url: "/assets/nishant.jpg",
+        url: "/Images/Nishant.png",
         width: 1200,
         height: 630,
         alt: content.siteMeta.title,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: content.siteMeta.title,
     description: content.siteMeta.description,
-    images: ["/assets/nishant.jpg"],
+    images: ["/Images/Nishant.png"],
   },
   icons: {
     icon: "/Images/Logos/Icon.png",

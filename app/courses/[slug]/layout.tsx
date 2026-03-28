@@ -48,7 +48,7 @@ export default async function CourseLayout({ children, params }: { children: Rea
     "provider": {
       "@type": "Organization",
       "name": "Nishant Mendhe",
-      "sameAs": "https://www.nishantmendhe.in"
+      "sameAs": "/"
     }
   } : null;
 

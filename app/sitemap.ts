@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { coursesData } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.nishantmendhe.in';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
   // Base routes
   const routes = [

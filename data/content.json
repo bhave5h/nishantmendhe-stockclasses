@@ -7,7 +7,7 @@
             "@context": "https://schema.org/",
             "@type": "Product",
             "name": "Best Stock Market Training Institute in Nagpur",
-            "image": "https://www.nishantmendhe.in/assets/nishant.jpg",
+            "image": "/assets/nishant.jpg",
             "description": "Master the stock market with our expert-led stock market classes in Nagpur. Enroll today!",
             "brand": {
                 "@type": "Brand",
@@ -213,36 +213,17 @@
         }
     },
     "media": [
-        "https://www.nishantmendhe.in/assets/nishant.jpg",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/logo-white.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/3.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/4.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(1).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(2).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/2.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(3).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/nishant.jpg",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/2(1).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(4).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/2(2).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/3(1).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/4(1).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/5.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/6.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(5).png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/apple.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/play.png",
-        "./Nishant Mendhe __ Stock Market Training Institute in Nagpur_files/1(6).png"
+        "/assets/nishant.jpg",
+        "/Images/Logos/Icon.png"
     ],
     "ctas": [
         {
             "text": "Know More",
-            "link": "https://www.nishantmendhe.in/our-programs.html"
+            "link": "/#courses"
         },
         {
             "text": "Explore More",
-            "link": "https://www.nishantmendhe.in/our-programs.html"
+            "link": "/#courses"
         }
     ],
     "webinar": {
@@ -258,7 +239,7 @@
         "socialProof": "Thousands of learners have already benefited from this training and improved their financial knowledge and trading confidence.",
         "urgency": "Seats are limited!!! Book your seat now.",
         "ctaText": "Join Now !",
-        "ctaLink": "https://www.nishantmendhe.in/",
+        "ctaLink": "/",
         "speakerImage": "/Images/web1.png",
         "backgroundImage": "/Images/paperbg.png",
         "tagline": {

@@ -107,18 +107,22 @@ export default function Home() {
         </div>
 
         {/* Text Content (Order 3 on Mobile, Left Column on Desktop) */}
-        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left p-9 md:text-center lg:text-left z-10">
+        <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left p-2 md:text-center lg:text-left z-10">
           
           <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight opacity-85 mb-2">
             Join Nishant Mendhe for Stock Trading Basics
           </h1>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
-            <p className="text-[20px] md:text-xl lg:text-2xl font-bold mb-2 text-black opacity-80">At this program, you will learn to:</p>
-            <ul className="text-base md:text-lg lg:text-xl space-y-1 font-medium text-black opacity-70 text-left inline-block">
-              <li>• The basics of the stock market and trading concepts</li>
-              <li>• Apply simple, practical, and time-tested trading principles</li>
-              <li>• Develop the right mindset and discipline needed for successful trading</li>
+            <p className="text-[20px] md:text-xl lg:text-3xl font-bold mb-2 text-black opacity-80">At this program, you will learn to:</p>
+            <ul className="text-base md:text-lg lg:text-xl space-y-1 font-bold text-black opacity-60 text-left inline-block">
+              <li>1. How to find multibagger stock</li>
+              <li>2. How to use RSI Indicator</li>
+              <li>3. How to buy at bottom</li>
+              <li>4. Rsi overbought does not mean sell</li>
+              <li>5. RSI oversold is trap</li>
+              <li>6. Free RSI multibagger scanner</li>
+   
             </ul>
           </div>
 
@@ -127,7 +131,7 @@ export default function Home() {
           </p>
 
           <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80">
-            Seats are limited!!! Book your seat now.
+            Seats are filling rapidly, 74% already booked. Secure your spot now before it’s gone!
           </p>
         </div>
 
@@ -141,7 +145,6 @@ export default function Home() {
         </Link>
       </div>
 
-      <WhatYouWillLearn />
       <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
         <WebinarForm />
       </div>
