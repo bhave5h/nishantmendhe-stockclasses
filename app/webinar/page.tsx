@@ -71,15 +71,15 @@ export default function Home() {
               {/* Location */}
               <div className="flex items-center gap-3">
                 <MapPin className="w-8 h-8 md:w-10 md:h-10 text-[#5EBA3F] shrink-0" strokeWidth={1.5} />
-                <span className="font-bold text-base md:text-lg leading-tight">Auditorium, Nagpur</span>
+                <span className="font-bold text-base md:text-lg leading-tight">Online</span>
               </div>
 
               {/* Platform */}
               <div className="flex items-center gap-3">
                 <PlayCircle className="w-8 h-8 md:w-10 md:h-10 text-[#5EBA3F] shrink-0" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-sm md:text-base text-gray-400 leading-tight">Live On Youtube</span>
-                  <span className="font-bold text-base md:text-lg leading-tight">@NMS</span>
+                  <span className="text-sm md:text-base text-gray-400 leading-tight">Live On</span>
+                  <span className="font-bold text-base md:text-lg leading-tight">Google Meet</span>
                 </div>
               </div>
 
