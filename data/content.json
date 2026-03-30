@@ -77,7 +77,7 @@
             "id": "TFC",
             "slug": "TFC",
             "title": "TFC - Trading Fundamentals Course",
-            "price": "₹1000",
+            "price": "₹5000",
             "image": "/Images/courses/c1.png",
             "duration": "10 Days",
             "modules": "9",
@@ -90,41 +90,41 @@
             "fullDescription": "An introduction to the RSI Indicator, focusing on basic support/resistance zones and initial trade setups. This course is perfect for those new to technical trading and want a robust foundation.",
             "curriculum": [
                 {
-                    "title": "Day 1 : Low-risk and High-reward Trading",
-                    "content": "1. Mind set \n2. candles vs Bar \n3. Rsik Reword Ratio \n4. Succes Ratio"
-                },
-                {
-                    "title": "Day 2 : Trend",
-                    "content": "1. Up Trend \n2. Down And Sideways \n3. minor trend vs major trend"
-                },
-                {
-                    "title": "Day 3 : Low-risk high-reward trading",
-                    "content": "5 Types Of buying Patterns"
-                },
-                {
-                    "title": "Day 4 : Low Risk High Reward trading",
-                    "content": "5 Types Of Bearish Patterns"
-                },
-                {
-                    "title": "Day 5 : Inside bar vs Outside Bar",
-                    "content": "1. 4 types of inside bar \n2. 4 types of outside bar"
-                },
-                {
-                    "title": "Day 6 : RSI Indicator",
-                    "content": "Rsi Indicator Basic"
-                },
-                {
-                    "title": "Day 7 : Rsi Indicator",
-                    "content": "RSI 40 Support"
-                },
-                {
-                    "title": "Day 8 : RSI Indicator",
-                    "content": "Rsi Weekly 40 Support \n Rsi Monthly 40 Support"
-                },
-                    {
-                    "title": "Day 9 : RSI",
-                    "content": "RSI Bullish Range Shift with Option"
-                }
+        "title": "SECTION 1 : Type of Trends",
+        "content": "1. Mind set \n2. candles vs Bar \n3. Rsik Reword Ratio \n4. Succes Ratio"
+    },
+    {
+        "title": "SECTION 2 : Spot the Trend Early",
+        "content": "1. Up Trend \n2. Down And Sideways \n3. minor trend vs major trend"
+    },
+    {
+        "title": "SECTION 3 : Best Way to Trade the Inside Bar",
+        "content": "5 Types Of buying Patterns"
+    },
+    {
+        "title": "SECTION 4 : Hidden Tools for Minor Uptrends",
+        "content": "5 Types Of Bearish Patterns"
+    },
+    {
+        "title": "SECTION 5 : Secret Tools for Falling Markets",
+        "content": "1. 4 types of inside bar \n2. 4 types of outside bar"
+    },
+    {
+        "title": "SECTION 6 : Best Way to Trade the Outside Bar",
+        "content": "Rsi Indicator Basic"
+    },
+    {
+        "title": "SECTION 7 : RSI Basic",
+        "content": "RSI 40 Support"
+    },
+    {
+        "title": "SECTION 8 : RSI 40 Support on Daily",
+        "content": "Rsi Weekly 40 Support \n Rsi Monthly 40 Support"
+    },
+    {
+        "title": "SECTION 9 : RSI Bullish Range Shift",
+        "content": "RSI Bullish Range Shift with Option"
+    }
             ]
         },
         {

@@ -3,14 +3,11 @@
 import { Calendar, Clock, MapPin, PlayCircle, IndianRupee, Megaphone } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import WebinarForm from "./WebinarForm";
-import heroImg from "@/public/Images/Hero/hero.png";
-import { motion } from 'framer-motion';
+import heroImg from "@/public/Images/a.png";
 import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
 import Image from "next/image";
 import bgImg2 from "@/public/Images/BG/c.png";
 import Testimonials from "@/components/sections/Testimonials";
-import WhatYouWillLearn from "@/components/sections/WhatYouWillLearn";
-import FreeResources from "@/components/sections/FreeResources";
 import RegisterBTn from "@/components/ui/Register_btn";
 import Link from "next/link";
 
@@ -36,7 +33,7 @@ export default function Home() {
         {/* Mobile-only H1 (Order First on Mobile, Hidden on Desktop) */}
         <div className="order-first md:hidden w-full pt-8 pb-2 z-10 text-center">
           <h1 className="text-3xl font-extrabold tracking-tight">
-            Join Nishant Mendhe for Stock Trading Basics
+            Join Nisshant Menddhe for Free Stock Trading Webinar
           </h1>
         </div>
         
@@ -110,7 +107,7 @@ export default function Home() {
         <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left p-2 md:text-center lg:text-left z-10">
           
           <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight opacity-85 mb-2">
-            Join Nishant Mendhe for Stock Trading Basics
+            Join Nisshant Menddhe for Free Stock Trading Webinar
           </h1>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
@@ -134,22 +131,20 @@ export default function Home() {
             Seats are filling rapidly, 74% already booked. Secure your spot now before it’s gone!
           </p>
         </div>
-
-
       </div>
 
-      
+      <div>
+        <WebinarForm />
+      </div>
+
+      <Testimonials />
+
       <div className="flex flex-wrap items-center gap-6 mt-10">
         <Link href="#registerform">
           <RegisterBTn />
         </Link>
       </div>
-
-      <div className="order-4 lg:order-none lg:col-span-12 lg:row-start-3 w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
-        <WebinarForm />
-      </div>
-      <FreeResources />
-      <Testimonials />
+    
     </main>
   );
 }

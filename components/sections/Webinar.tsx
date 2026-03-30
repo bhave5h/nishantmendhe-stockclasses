@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import content from "@/data/content.json";
 import { Calendar, Clock, MapPin, Play, IndianRupee } from "lucide-react";
+import { Dancing_Script } from "next/font/google";
+
+const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
 
 const { webinar } = content;
 
@@ -107,9 +110,8 @@ export default function WebinarSection() {
                         {/* Tagline overlay at bottom-right of image */}
                         <div className="absolute bottom-4 right-3 z-20 text-right leading-none select-none">
                             <span
-                                className="block text-white text-xl"
+                                className={`block text-white text-xl ${dancingScript.className}`}
                                 style={{
-                                    fontFamily: "'Dancing Script', cursive",
                                     textShadow: "1px 1px 4px rgba(0,0,0,0.6)",
                                 }}
                             >

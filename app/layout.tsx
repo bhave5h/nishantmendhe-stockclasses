@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/Images/Logos/Icon.png",
   },
+  alternates: {
+    canonical: null,
+  }
 };
 
 export default function RootLayout({
@@ -46,10 +49,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
