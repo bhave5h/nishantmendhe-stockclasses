@@ -207,7 +207,7 @@
         "social": {
             "instagram": "https://www.instagram.com/nisshantmenddhe.trader/",
             "facebook": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute",
-            "linkedin": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/",
+            "linkedin": "https://www.linkedin.com/in/nishant-mendhe-a16427200/",
             "youtube": "https://www.youtube.com/c/NishantMendhe1",
             "twitter": "https://twitter.com/NishantMendhe11"
         }
@@ -287,7 +287,7 @@
         "freeResources": [
             { "id": 1, "name": "Instagram", "description": "Follow for Updates", "link": "https://www.instagram.com/nisshantmenddhe.trader/", "image": "/Images/Webinar/youtube.png"},
             { "id": 2, "name": "Facebook", "description": "Community Updates", "link": "https://www.facebook.com/NishantMendheStockMarketTrainingInstitute", "image": "/Images/Webinar/facebook.png"},
-            { "id": 3, "name": "LinkedIn", "description": "Professional Network", "link": "https://www.linkedin.com/in/nishant-mendhe-9b6b771b9/", "image": "/Images/Webinar/linkden.png"}
+            { "id": 3, "name": "LinkedIn", "description": "Professional Network", "link": "https://www.linkedin.com/in/nishant-mendhe-a16427200/", "image": "/Images/Webinar/linkden.png"}
         ]
     }
 }

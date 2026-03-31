@@ -21,6 +21,17 @@ export default function Footer() {
         }
     };
 
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+        if (pathname === "/") {
+            e.preventDefault();
+            const elem = document.getElementById(targetId);
+            if (elem) {
+                elem.scrollIntoView({ behavior: "smooth" });
+                window.history.pushState(null, "", `/#${targetId}`);
+            }
+        }
+    };
+
     return (
         <footer className="bg-black text-gray-300 relative overflow-hidden">
             {/* Subtle Top Border/Glow effect */}
@@ -76,21 +87,11 @@ export default function Footer() {
                     <div className="lg:col-span-2 lg:col-start-6">
                         <h4 className="text-white font-semibold mb-6 tracking-wide">Quick Links</h4>
                         <ul className="space-y-4">
-                            <li><Link href={pathname === "/" ? "#courses" : "/#courses"} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Premium Courses</Link></li>
-                            <li><Link href={pathname === "/" ? "#about" : "/#about"} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">About Us</Link></li>
+                            <li><Link href={pathname === "/" ? "#courses" : "/#courses"} onClick={(e) => handleScroll(e, 'courses')} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Premium Courses</Link></li>
+                            <li><Link href={pathname === "/" ? "#about" : "/#about"} onClick={(e) => handleScroll(e, 'about')} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">About Us</Link></li>
                             <li><Link href="/webinar" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Webinar</Link></li>
                             <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Contact</Link></li>
-                            <li><Link href={pathname === "/" ? "#faqs" : "/#faqs"} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">FAQs</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Legal/Extra */}
-                    <div className="lg:col-span-2">
-                        <h4 className="text-white font-semibold mb-6 tracking-wide">Legal</h4>
-                        <ul className="space-y-4">
-                            <li><Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Privacy Policy</Link></li>
-                            <li><Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Terms of Service</Link></li>
-                            <li><Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Refund Policy</Link></li>
+                            <li><Link href={pathname === "/" ? "#faqs" : "/#faqs"} onClick={(e) => handleScroll(e, 'faqs')} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">FAQs</Link></li>
                         </ul>
                     </div>
 
