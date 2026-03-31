@@ -37,7 +37,7 @@ export default function Footer() {
             {/* Subtle Top Border/Glow effect */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent opacity-50"></div>
 
-            <div className="max-w-[1280px] mx-auto px-6 md:px-12 pt-20 pb-10">
+            <div className="max-w-[1000px] mx-auto px-6 md:px-12 pt-20 pb-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
 
                     {/* Brand & About */}
@@ -101,7 +101,7 @@ export default function Footer() {
                         <ul className="space-y-5 text-gray-400">
                             <li className="flex items-start gap-3">
                                 <Mail className="w-5 h-5 text-gray-500 mt-0.5 flex-shrink-0" />
-                                <a href={`mailto:${email}`} className="hover:text-white transition-colors duration-200 break-all">{email}</a>
+                                <a href={`mailto:${email}`} className="hover:text-white transition-colors duration-200">{email}</a>
                             </li>
                             {phone && (
                                 <li className="flex items-center gap-3">

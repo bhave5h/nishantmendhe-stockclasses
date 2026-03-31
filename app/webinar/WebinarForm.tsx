@@ -143,7 +143,7 @@ export default function WebinarForm() {
             onClick={handleVideoClick}
             className="absolute inset-0 w-full h-full object-cover z-0 cursor-pointer"
           >
-            <source src="/Images/Webinar/w.webm" type="video/webm" />
+            <source src="/Images/Webinar/intro.webm" type="video/webm" />
           </video>
 
           {/* Overlay Gradients */}

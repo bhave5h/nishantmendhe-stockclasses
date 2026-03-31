@@ -3,10 +3,10 @@
 import { Calendar, Clock, MapPin, PlayCircle, IndianRupee, Megaphone } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import WebinarForm from "./WebinarForm";
-import heroImg from "@/public/Images/a.png";
+import heroImg from "@/public/Images/Webinar/webinar.webp";
 import { FadeInOnLoad, Counter, SlideUpBg } from "@/components/ui/motion";
 import Image from "next/image";
-import bgImg2 from "@/public/Images/BG/c.png";
+import bgImg2 from "@/public/Images/BG/web_bg.webp";
 import Testimonials from "@/components/sections/Testimonials";
 import RegisterBTn from "@/components/ui/Register_btn";
 import Link from "next/link";
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="relative w-full max-w-[350px] md:max-w-[450px] lg:max-w-[600px] flex justify-center lg:justify-end items-end">
             <img
               src={heroImg.src}
-              alt="Nishant Mendhe"
+              alt="Nishant Mendhe Sir"
               className="w-full h-auto object-contain object-bottom drop-shadow-2xl pt-10"
             />
           </div>
