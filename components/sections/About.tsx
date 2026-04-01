@@ -18,8 +18,8 @@ export default function About() {
             </h2>
           </FadeUp>
 
-          <FadeUp delay={0.1} className="w-full">
-            <div className="text-neutral-500 text-lg md:text-xl leading-relaxed mb-0">
+          <FadeUp delay={0.1}>
+            <div className="text-neutral-500 text-lg md:text-xl leading-relaxed lg:pr-10">
               {content.about.description.split("__").map((paragraph, idx) => (
                 <p key={idx} className={idx > 0 ? "mt-4" : ""}>
                   {paragraph}

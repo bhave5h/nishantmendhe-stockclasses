@@ -108,12 +108,12 @@ export default function WebinarForm() {
     <section id="registerform">
       <div className="w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
 
-                  {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="text-3xl md:text-3xl lg:text-4xl font-bold mb-3 text-neutral-800 leading-[1.1]"
             >
@@ -243,10 +243,7 @@ export default function WebinarForm() {
           </form>
         </div>
       </div>
-
       </div>
-
-
     </section>
   );
 }

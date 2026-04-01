@@ -8,7 +8,7 @@ import Webinar from "@/app/webinar/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-full overflow-hidden bg-white text-[#111111]">
+    <div>
       <Hero />
       <About />
       <Benefits />

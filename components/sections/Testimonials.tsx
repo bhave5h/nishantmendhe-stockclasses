@@ -5,9 +5,10 @@ import { motion } from 'framer-motion';
 import { Play, Star, Quote } from 'lucide-react';
 
 const shorts = [
-  { id: 'FvmSCoTIr1k', label: 'Samartha' },
-  { id: 'E8Cbxg3Laj8', label: 'Pradeep' },
-  { id: 'lh3ep4uGYAI', label: 'Anil' },
+    { id: 'lh3ep4uGYAI', label: 'Anil' },
+    { id: 'E8Cbxg3Laj8', label: 'Pradeep' },
+    { id: 'FvmSCoTIr1k', label: 'Samartha' },
+
 ];
 
 const testimonials = [
