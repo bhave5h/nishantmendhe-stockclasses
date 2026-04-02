@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+
 import content from "@/data/content.json";
 
 export default function Navbar() {
@@ -86,14 +86,74 @@ export default function Navbar() {
                     ))}
                 </ul>
                 
-                {/* Mobile Menu Toggle */}
-                <button
-                    className="md:hidden p-2 -mr-2 text-neutral-600 hover:text-black focus:outline-none"
-                    onClick={() => setIsOpen(!isOpen)}
-                    aria-label="Toggle menu"
-                >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                {/* CSS Animated Hamburger */}
+                <div className="md:hidden">
+                    <style>{`
+                        .icon-menu {
+                            --gap: 5px;
+                            --height-bar: 2.5px;
+                            --pos-y-bar-one: 0;
+                            --pos-y-bar-three: 0;
+                            --scale-bar: 1;
+                            --rotate-bar-one: 0;
+                            --rotate-bar-three: 0;
+                            width: 25px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: var(--gap);
+                            cursor: pointer;
+                            position: relative;
+                        }
+                        .bar {
+                            position: relative;
+                            height: var(--height-bar);
+                            width: 100%;
+                            border-radius: .5rem;
+                            background-color: #000000;
+                        }
+                        .bar--1 {
+                            top: var(--pos-y-bar-one);
+                            transform: rotate(var(--rotate-bar-one));
+                            transition: top 200ms 100ms, transform 100ms;
+                        }
+                        .bar--2 {
+                            transform: scaleX(var(--scale-bar));
+                            transition: transform 150ms 100ms;
+                        }
+                        .bar--3 {
+                            bottom: var(--pos-y-bar-three);
+                            transform: rotate(var(--rotate-bar-three));
+                            transition: bottom 200ms 100ms, transform 100ms;
+                        }
+                        .check-icon:checked + .icon-menu > .bar--1 {
+                            transition: top 200ms, transform 200ms 100ms;
+                        }
+                        .check-icon:checked + .icon-menu > .bar--3 {
+                            transition: bottom 200ms, transform 200ms 100ms;
+                        }
+                        .check-icon:checked + .icon-menu {
+                            --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+                            --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+                            --scale-bar: 0;
+                            --rotate-bar-one: 45deg;
+                            --rotate-bar-three: -45deg;
+                        }
+                    `}</style>
+                    <input
+                        hidden
+                        className="check-icon"
+                        id="check-icon"
+                        name="check-icon"
+                        type="checkbox"
+                        checked={isOpen}
+                        onChange={() => setIsOpen(!isOpen)}
+                    />
+                    <label className="icon-menu" htmlFor="check-icon" aria-label="Toggle menu">
+                        <div className="bar bar--1" />
+                        <div className="bar bar--2" />
+                        <div className="bar bar--3" />
+                    </label>
+                </div>
             </nav>
 
             {/* Mobile Menu Dropdown */}

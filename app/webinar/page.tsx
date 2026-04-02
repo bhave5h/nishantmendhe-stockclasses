@@ -125,7 +125,7 @@ export default function Home() {
           </div>
 
           <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-black opacity-70">
-            Whether you are a student, working professional, business owner, or a complete beginner, this program helps you gain clear understanding of stock trading from the ground up.
+            Join our <b>FREE webinar</b> perfect for students, professionals, business owners, or beginners to learn stock trading clearly from scratch.
           </p>
 
           <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80">

@@ -117,7 +117,7 @@ export default function WebinarForm() {
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="text-3xl md:text-3xl lg:text-4xl font-bold mb-3 text-neutral-800 leading-[1.1]"
             >
-              Register for Webinar
+              Register Webinar Free
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
