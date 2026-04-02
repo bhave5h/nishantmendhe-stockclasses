@@ -44,7 +44,7 @@ export default function Courses() {
                             className="flex flex-col bg-white rounded-[24px] overflow-hidden border border-gray-300 shadow-[0px_4px_47px_22px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_4px_47px_-17px_rgba(0,_0,_0,_0.1)] transition-shadow duration-300"
                         >
                             {/* Card Image */}
-                            <div className="relative w-full aspect-[4/3] bg-gray-50 overflow-hidden">
+                            <div className="relative w-1xl aspect-[4/3]  overflow-hidden">
                                 <Image
                                     src={course.image}
                                     alt={course.title}
@@ -66,11 +66,11 @@ export default function Courses() {
                                     {course.title}
                                 </h3>
 
-                                <p className="text-[14px] text-neutral-500 font-semibold leading-relaxed mb-8 flex-grow">
+                                <p className="text-lg text-neutral-400 font-semibold leading-relaxed mb-1 flex-grow">
                                     {course.description}
                                 </p>
 
-                                <div className="pt-1 border-t border-gray-100 flex items-center justify-between mt-auto">
+                                <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
                                     <span className="text-[20px] font-bold text-[#0F172A] tracking-tight opacity-80">
                                         {course.price}
                                     </span>

@@ -39,7 +39,7 @@ export default function About() {
               src={aboutImg}
               alt="About the institute"
               fill
-              className="rounded-lg object-cover hover:scale-105 transition-transform duration-700"
+              className="rounded-lg object-cover"
             />
           </FadeUp>
         </div>

@@ -76,9 +76,9 @@
         {
             "id": "TFC",
             "slug": "TFC",
-            "title": "TFC - Trading Fundamentals Course",
+            "title": "TFC - Trading Foundations for Clarity",
             "price": "₹1",
-            "image": "/Images/courses/c1.png",
+            "image": "/Images/courses/TFC.webp",
             "duration": "10 Days",
             "modules": "9",
             "support": "1 Month",
@@ -132,7 +132,7 @@
             "slug": "ATM",
             "title": "ATM - Advance Technical Master Class",
             "price": "₹16,999",
-            "image": "/Images/courses/c2.png",
+            "image": "/Images/courses/ATM.webp",
             "duration": "1 Month",
             "modules": "2 Modules",
             "support": "6 Months Support",
@@ -178,7 +178,56 @@
             ]
         }
     ],
-    "testimonials": [],
+    "testimonials": [
+        {
+            "id": "t1",
+            "name": "Shweta Prakash",
+            "role": "IIT Microsoft",
+            "rating": 5,
+            "text": "Nishant sir is God sent to me. I learnt many techniques e.g. RSI, LR HR Study, MACD, ADX, and Fibonacci, etc. from him. He taught us very minute details of these indicators and studies.",
+            "source": "/Images/Testimonials/1.png"
+        },
+        {
+            "id": "t2",
+            "name": "Sanjeev Arora",
+            "role": "C.A. Amritsar",
+            "rating": 5,
+            "text": "Nishant Sir is a very genuine person and honest teacher. One must have firm belief in his ability. I really like him. I have full faith in his understanding of stock charts",
+            "source": "/Images/Testimonials/2.png"
+        },
+        {
+            "id": "t3",
+            "name": "Shaym Sharma",
+            "role": "C.A. Mumbai",
+            "rating": 5,
+            "text": "The best investment I ever made was enrolling in NMS course. Simple concepts, great examples, and an amazing community. 100% recommended!",
+            "source": "/Images/Testimonials/3.png"
+        },
+        {
+            "id": "t4",
+            "name": "Ruhi N",
+            "role": "IIM Raipur Project Manager IT",
+            "rating": 5,
+            "text": "Nishant Sir is a great mentor, highly recommended classes of Stockmarket !!",
+            "source": "/Images/Testimonials/4.png"
+        },
+        {
+            "id": "t5",
+            "name": "Neeraj Avinash",
+            "role": "CEO Seon Technologies",
+            "rating": 5,
+            "text": "Nishant sir is indeed a boon to the novice traders. Stock market is neither so easy nor too difficult. The best part in stock market is to learn the right tools and techniques. I am thankful to Nishant sir for his guidance and teaching that brought a very good change in my trading career",
+            "source": "/Images/Testimonials/5.png"
+        },
+        {
+            "id": "t6",
+            "name": "A.B. Gupta",
+            "role": "(I.E.S) IRSE officer Indian Railways",
+            "rating": 5,
+            "text": "Superlative analysis of market",
+            "source": "/Images/Testimonials/6.png"
+        }
+    ],
     "faqs": [
         {
             "question": "What are the prerequisites for joining the stock market classes?",
@@ -235,7 +284,7 @@
             "Apply simple, practical, and time-tested trading principles",
             "Develop the right mindset and discipline needed for successful trading"
         ],
-        "audienceText": "Whether you are a student, working professional, business owner, or a complete beginner, this program helps you gain clear understanding of stock trading from the ground up.",
+        "audienceText": "Join our **FREE webinar**—perfect for students, professionals, business owners, or beginners—to learn stock trading clearly from scratch.",
         "socialProof": "Thousands of learners have already benefited from this training and improved their financial knowledge and trading confidence.",
         "urgency": "Seats are limited!!! Book your seat now.",
         "ctaText": "Join Now !",
