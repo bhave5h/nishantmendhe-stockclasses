@@ -21,11 +21,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: course.title,
       description: course.description || course.fullDescription,
+      url: `https://www.nishantmendhe.in/courses/${course.slug}`,
       images: [
         {
           url: course.image,
+          width: 1200,
+          height: 630,
+          alt: course.title,
         },
       ],
+      type: "website",
+      siteName: "Nishant Mendhe Stock Market Training",
     },
     twitter: {
       card: "summary_large_image",

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Contact Us | ${content.siteMeta.title}`,
     description: "Get in touch with Nishant Mendhe for the best stock market training in Nagpur.",
-    url: "/contact",
+    url: "https://www.nishantmendhe.in/contact",
     siteName: content.siteMeta.title,
     images: [
       {
-        url: "/Images/Nishant.png",
+        url: "/Images/OG/contact.png",
         width: 1200,
         height: 630,
         alt: "Contact Nishant Mendhe",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Contact Us | ${content.siteMeta.title}`,
     description: "Get in touch with Nishant Mendhe for the best stock market training in Nagpur.",
-    images: ["/Images/Nishant.png"],
+    images: ["/Images/OG/contact.png"],
   },
 };
 

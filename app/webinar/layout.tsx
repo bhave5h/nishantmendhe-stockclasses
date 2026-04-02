@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Join Nishant Mendhe for Stock Trading Basics",
     description: "Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.",
-    url: "/webinar",
+    url: "https://www.nishantmendhe.in/webinar",
     siteName: "Nishant Mendhe Stock Market Training",
     images: [
       {
-        url: "/Images/Nishant.png",
+        url: "/Images/OG/webinar.png",
         width: 1200,
         height: 630,
         alt: "Nishant Mendhe Trading Webinar",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Join Nishant Mendhe for Stock Trading Basics",
     description: "Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.",
-    images: ["/Images/Nishant.png"],
+    images: ["/Images/OG/webinar.png"],
   },
 };
 
