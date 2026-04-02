@@ -51,7 +51,7 @@ export default function Hero() {
 
                             <div className="flex flex-col">
                                 <span className="text-3xl md:text-4xl font-bold text-[#111111] mb-1">
-                                    <Counter to={15} duration={2} />
+                                    <Counter to={13} duration={2} />
                                 </span>
                                 <span className="text-md md:text-sm font-medium text-neutral-500 w-32 whitespace-normal leading-tight">Years Experience</span>
                             </div>
@@ -59,7 +59,7 @@ export default function Hero() {
                             <div className="flex flex-col pl-6 md:pl-10 ">
 
                                 <span className="text-3xl md:text-4xl font-bold text-[#111111] mb-1">
-                                    <Counter to={13} suffix="K+" duration={2} />
+                                    <Counter to={10} suffix=" K+" duration={2} />
                                 </span>
                                 <span className="text-md md:text-sm font-medium text-neutral-500 w-32 whitespace-normal leading-tight">Trained Students</span>
                             </div>
