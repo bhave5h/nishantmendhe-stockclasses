@@ -11,6 +11,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import RegisterBTn from "@/components/ui/Register_btn";
 import Link from "next/link";
 import About from "@/components/sections/About";
+import { Highlight } from "@/components/ui/hero-highlight";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -34,7 +35,8 @@ export default function Home() {
         {/* Mobile-only H1 (Order First on Mobile, Hidden on Desktop) */}
         <div className="order-first md:hidden w-full pt-8 pb-2 z-10 text-center">
           <h1 className="text-3xl font-extrabold tracking-tight">
-            Join Nisshant Menddhe for Free Stock Trading Webinar
+            Join Nisshant Menddhe <br />
+            <Highlight className="text-white opacity-100 text-2xl">for Free Stock Trading Webinar</Highlight>
           </h1>
         </div>
         
@@ -108,11 +110,14 @@ export default function Home() {
         <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-1 lg:row-start-1 pt-2 lg:pt-6 pb-4 lg:pb-8 flex flex-col justify-center text-left p-2 md:text-center lg:text-left z-10">
           
           <h1 className="hidden md:block text-3xl md:text-3xl lg:text-[40px] font-extrabold tracking-tight opacity-85 mb-2">
-            Join Nisshant Menddhe for Free Stock Trading Webinar
+            Join Nisshant Menddhe <br />
+            <Highlight className="text-white opacity-90">for Free Stock Trading Webinar</Highlight>
           </h1>
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
-            <p className="text-[20px] md:text-xl lg:text-3xl font-bold mb-2 text-black opacity-80">At this program, you will learn to:</p>
+            <p className="text-[20px] md:text-xl lg:text-[25px] font-bold mb-2 text-black opacity-80">
+              At this program, you will learn to:
+            </p>
             <ul className="text-base md:text-lg lg:text-xl space-y-1 font-bold text-black opacity-60 text-left inline-block">
               <li>1. How to find multibagger stock</li>
               <li>2. How to use RSI Indicator</li>
@@ -125,7 +130,7 @@ export default function Home() {
           </div>
 
           <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-black opacity-70">
-            Join our <b>FREE webinar</b> perfect for students, professionals, business owners, or beginners to learn stock trading clearly from scratch.
+            Join our <b> FREE webinar </b> perfect for students, professionals, business owners, or beginners to learn stock trading clearly from scratch.
           </p>
 
           <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80">
