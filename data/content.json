@@ -181,10 +181,10 @@
     "testimonials": [
         {
             "id": "t1",
-            "name": "Shweta Prakash",
-            "role": "IIT Microsoft",
+            "name": "A.B. Gupta",
+            "role": "(I.E.S) IRSE officer Indian Railways",
             "rating": 5,
-            "text": "Nishant sir is God sent to me. I learnt many techniques e.g. RSI, LR HR Study, MACD, ADX, and Fibonacci, etc. from him. He taught us very minute details of these indicators and studies.",
+            "text": "Superlative analysis of market",
             "source": "/Images/Testimonials/1.png"
         },
         {
@@ -219,12 +219,12 @@
             "text": "Nishant sir is indeed a boon to the novice traders. Stock market is neither so easy nor too difficult. The best part in stock market is to learn the right tools and techniques. I am thankful to Nishant sir for his guidance and teaching that brought a very good change in my trading career",
             "source": "/Images/Testimonials/5.png"
         },
-        {
+         {
             "id": "t6",
-            "name": "A.B. Gupta",
-            "role": "(I.E.S) IRSE officer Indian Railways",
+            "name": "Shweta Prakash",
+            "role": "IIT Microsoft",
             "rating": 5,
-            "text": "Superlative analysis of market",
+            "text": "Nishant sir is God sent to me. I learnt many techniques e.g. RSI, LR HR Study, MACD, ADX, and Fibonacci, etc. from him. He taught us very minute details of these indicators and studies.",
             "source": "/Images/Testimonials/6.png"
         }
     ],
