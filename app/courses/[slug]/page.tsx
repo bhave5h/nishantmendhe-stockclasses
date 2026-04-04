@@ -176,6 +176,7 @@ export default function CourseDetails() {
                             src={course.image}
                             alt={course.title}
                             fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                             className="object-cover"
                         />
                     </motion.div>

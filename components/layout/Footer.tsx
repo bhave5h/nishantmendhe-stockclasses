@@ -48,7 +48,8 @@ export default function Footer() {
                                 alt="Nishant Mendhe Logo"
                                 width={270}
                                 height={50}
-                                className="h-auto w-auto max-w-[270px]"
+                                style={{ width: "270px", height: "auto" }}
+                                className="max-w-[270px]"
                             />
                         </Link>
                         <p className="text-gray-400 leading-relaxed mb-8 max-w-sm">
@@ -87,8 +88,9 @@ export default function Footer() {
                     <div className="lg:col-span-2 lg:col-start-6">
                         <h4 className="text-white font-semibold mb-6 tracking-wide">Quick Links</h4>
                         <ul className="space-y-4">
-                            <li><Link href={pathname === "/" ? "#courses" : "/#courses"} onClick={(e) => handleScroll(e, 'courses')} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Premium Courses</Link></li>
-                            <li><Link href={pathname === "/" ? "#about" : "/#about"} onClick={(e) => handleScroll(e, 'about')} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">About Us</Link></li>
+                            <li><Link href="/courses" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Premium Courses</Link></li>
+                            <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">About Us</Link></li>
+                            <li><Link href="/blogs" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Blogs & Articles</Link></li>
                             <li><Link href="/webinar" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Webinar</Link></li>
                             <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">Contact</Link></li>
                             <li><Link href={pathname === "/" ? "#faqs" : "/#faqs"} onClick={(e) => handleScroll(e, 'faqs')} className="text-gray-400 hover:text-white transition-colors duration-200 block w-max">FAQs</Link></li>

@@ -33,7 +33,7 @@ export default function Courses() {
           </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto pl-10 pr-10">
                     {coursesData.map((course, index) => (
                         <motion.div
                             key={index}
@@ -49,6 +49,7 @@ export default function Courses() {
                                     src={course.image}
                                     alt={course.title}
                                     fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                     className="object-cover"
                                 />
                             </div>

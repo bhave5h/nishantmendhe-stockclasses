@@ -30,9 +30,10 @@ export default function Navbar() {
     const navLinks = [
         { name: "Home", path: "/" },
         { name: "Webinar", path: "/webinar" },
+        { name: "Courses", path: "/courses" },
+        { name: "Blogs", path: "/blogs" },
+        { name: "About", path: "/about" },
         { name: "Contact", path: "/contact" },
-        { name: "Courses", path: "/#courses" },
-        { name: "About", path: "/#about" },
     ];
 
     const getHref = (path: string) => {

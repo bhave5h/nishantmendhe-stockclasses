@@ -9,3 +9,5 @@ export const coursesData = content.courses.map((course) => {
         levelColor: course.levelColor || 'bg-neutral-100 text-neutral-700',
     };
 });
+
+export const blogsData = (content as any).blogs || [];
