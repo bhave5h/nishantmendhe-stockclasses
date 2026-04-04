@@ -34,7 +34,7 @@ export default function BlogsPage() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pl-10 pr-10 gap-8">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pl-10 pr-10 gap-8 max-w-5xl mx-auto">
                     {blogsData.map((blog: any, index: number) => (
                         <div key={blog.id} className="h-full">
                             <BlogCard blog={blog} />

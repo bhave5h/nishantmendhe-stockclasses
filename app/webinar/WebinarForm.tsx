@@ -41,7 +41,7 @@ export default function WebinarForm() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     const currentVideo = videoRef.current;
@@ -64,17 +64,17 @@ export default function WebinarForm() {
     name: "",
     phone: "",
     email: "",
-    profession: ""
+    profession: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     setForm({
       ...form,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     const formData = new FormData();
@@ -90,8 +90,8 @@ export default function WebinarForm() {
       {
         method: "POST",
         mode: "no-cors",
-        body: formData
-      }
+        body: formData,
+      },
     );
 
     alert("Registration Successful!");
@@ -100,149 +100,148 @@ export default function WebinarForm() {
       name: "",
       phone: "",
       email: "",
-      profession: ""
+      profession: "",
     });
   };
 
   return (
     <section id="registerform">
       <div className="w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
-
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-              className="text-3xl md:text-3xl lg:text-4xl font-bold mb-3 text-neutral-800 leading-[1.1]"
-            >
-              Register Webinar Free
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-              className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
-            >
-              Join our live session and learn about our trading strategies
-            </motion.p>
-          </div>
-
-      <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-3xl mx-auto border border-neutral-100">
-        {/* Left Column - Video & Branding */}
-        <div className="relative w-full md:w-1/2 min-h-[600px] md:min-h-auto flex flex-col justify-between p-8 overflow-hidden">
-          {/* Video Background */}
-          <video
-            ref={videoRef}
-            loop
-            muted={isMuted}
-            playsInline
-            preload="metadata"
-            onClick={handleVideoClick}
-            className="absolute inset-0 w-full h-full object-cover z-0 cursor-pointer"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="text-3xl md:text-3xl lg:text-4xl font-bold mb-3 text-neutral-800 leading-[1.1]"
           >
-            <source src="/Images/Webinar/intro.webm" type="video/webm" />
-          </video>
+            Register For Free Webinar
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+            className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
+          >
+            Join our live session and learn about our trading strategies
+          </motion.p>
+        </div>
 
-          {/* Overlay Gradients */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#ff7a00]/40 via-black/20 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none"></div>
+        <div className="w-full bg-white text-black rounded-[24px] shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-3xl mx-auto border border-neutral-100">
+          {/* Left Column - Video & Branding */}
+          <div className="relative w-full md:w-1/2 min-h-[600px] md:min-h-auto flex flex-col justify-between p-8 overflow-hidden">
+            {/* Video Background */}
+            <video
+              ref={videoRef}
+              loop
+              muted={isMuted}
+              playsInline
+              preload="metadata"
+              onClick={handleVideoClick}
+              className="absolute inset-0 w-full h-full object-cover z-0 cursor-pointer"
+            >
+              <source src="/Images/Webinar/intro.webm" type="video/webm" />
+            </video>
 
-          {/* Logo (Top Left) */}
-          <div className="relative z-20 flex items-center gap-3">
-            <div className="mt-[-50px]">
-              <Image
-                src="/Images/Logos/F_logo.png"
-                alt="Nishant Mendhe"
-                width={150}
-                height={150}
-                className="w-32 h-32 object-contain"
-              />
+            {/* Overlay Gradients */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#ff7a00]/40 via-black/20 to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none"></div>
+
+            {/* Logo (Top Left) */}
+            <div className="relative z-20 flex items-center gap-3">
+              <div className="mt-[-50px]">
+                <Image
+                  src="/Images/Logos/F_logo.png"
+                  alt="Nishant Mendhe"
+                  width={150}
+                  height={150}
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
             </div>
           </div>
+
+          {/* Right Column - Form */}
+          <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-10 flex flex-col justify-center bg-white">
+            <h2 className="text-2xl md:text-2xl font-bold text-neutral-900 mb-2 tracking-tight">
+              Register for Free Webinar
+            </h2>
+            <p className="text-sm text-neutral-500 mb-3 font-medium">
+              Access our live session, insights, and trading strategies
+            </p>
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[13px] text-neutral-700 font-bold">
+                  Your name
+                </label>
+                <input
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  type="text"
+                  placeholder="e.g. John Doe"
+                  required
+                  className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+                />
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[13px] text-neutral-700 font-bold">
+                  Your phone
+                </label>
+                <input
+                  name="phone"
+                  value={form.phone}
+                  onChange={handleChange}
+                  type="tel"
+                  placeholder="+91 9876543210"
+                  required
+                  className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+                />
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[13px] text-neutral-700 font-bold">
+                  Your email
+                </label>
+                <input
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  type="email"
+                  placeholder="e.g. john@example.com"
+                  required
+                  className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+                />
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[13px] text-neutral-700 font-bold">
+                  Profession
+                </label>
+                <input
+                  name="profession"
+                  value={form.profession}
+                  onChange={handleChange}
+                  type="text"
+                  placeholder="e.g. Student, Trader, IT Professional"
+                  required
+                  className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="mt-2 bg-[#0a0a0a] hover:bg-green-500 duration-300 text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98]"
+              >
+                Register Now
+              </button>
+            </form>
+          </div>
         </div>
-
-        {/* Right Column - Form */}
-        <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-10 flex flex-col justify-center bg-white">
-          <h2 className="text-2xl md:text-2xl font-bold text-neutral-900 mb-2 tracking-tight">
-            Register for Webinar
-          </h2>
-          <p className="text-sm text-neutral-500 mb-3 font-medium">
-            Access our live session, insights, and trading strategies
-          </p>
-
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div className="flex flex-col gap-1.5">
-              <label className="text-[13px] text-neutral-700 font-bold">
-                Your name
-              </label>
-              <input
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                type="text"
-                placeholder="e.g. John Doe"
-                required
-                className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
-              />
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-[13px] text-neutral-700 font-bold">
-                Your phone
-              </label>
-              <input
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-                type="tel"
-                placeholder="+91 9876543210"
-                required
-                className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
-              />
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-[13px] text-neutral-700 font-bold">
-                Your email
-              </label>
-              <input
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                type="email"
-                placeholder="e.g. john@example.com"
-                required
-                className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
-              />
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-[13px] text-neutral-700 font-bold">
-                Profession
-              </label>
-              <input
-                name="profession"
-                value={form.profession}
-                onChange={handleChange}
-                type="text"
-                placeholder="e.g. Student, Trader, IT Professional"
-                required
-                className="bg-white text-black placeholder-neutral-400 rounded-lg px-4 py-2 text-sm outline-none border border-neutral-200 focus:border-black focus:ring-1 focus:ring-black transition-shadow"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="mt-2 bg-[#0a0a0a] hover:bg-green-500 duration-300 text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98]"
-            >
-              Register Now
-            </button>
-          </form>
-        </div>
-      </div>
       </div>
     </section>
   );

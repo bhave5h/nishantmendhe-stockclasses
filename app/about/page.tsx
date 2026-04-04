@@ -78,9 +78,12 @@ export default function AboutPage() {
                 </div>
             </div>
 
-            <div>
+            <div className="">
                 <AboutSection />
             </div>
+
+
+
         </main>
     );
 }

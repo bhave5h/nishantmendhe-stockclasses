@@ -16,7 +16,7 @@ interface BlogCardProps {
 export default function BlogCard({ blog }: BlogCardProps) {
     return (
         <div className="flex flex-col bg-white rounded-[24px] overflow-hidden border border-gray-300 shadow-[0px_4px_47px_22px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_4px_47px_-17px_rgba(0,_0,_0,_0.1)] transition-shadow duration-300 h-full">
-            <Link href={`/blogs/${blog.slug}`} className="block relative w-full aspect-[4/3] overflow-hidden group">
+            <Link href={`/blogs/${blog.slug}`} className="block relative w-full aspect-[4/2.5] overflow-hidden group">
                 <Image
                     src={blog.image}
                     alt={blog.title}
