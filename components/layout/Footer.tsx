@@ -63,10 +63,8 @@ export default function Footer() {
               <Image
                 src="/Images/Logos/Full_logo.svg"
                 alt="Nishant Mendhe Logo"
+                height={100}
                 width={270}
-                height={50}
-                style={{ width: "270px", height: "auto" }}
-                className="max-w-[270px]"
               />
             </Link>
             <p className="text-gray-400 leading-relaxed mb-8 max-w-sm">
@@ -197,6 +195,17 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-800/80 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 text-center md:text-left">
             © {new Date().getFullYear()} Nishant Mendhe. All Rights Reserved.
+          </p>
+          <p className="text-sm text-gray-500 text-center md:text-right">
+            Developed by{" "}
+            <a
+              href="https://www.bigtopsocial.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 hover:text-white transition-colors duration-200 font-medium"
+            >
+              BigtopSocial
+            </a>
           </p>
         </div>
       </div>

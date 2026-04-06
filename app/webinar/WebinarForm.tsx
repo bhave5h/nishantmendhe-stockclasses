@@ -106,7 +106,7 @@ export default function WebinarForm() {
 
   return (
     <section id="registerform">
-      <div className="w-full mt-6 lg:mt-8 p-10 z-20 mb-20 bg-white h-full">
+      <div className="w-full mt-6 lg:mt-8 p-10 z-20 bg-white mb-2  h-full">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
           <motion.h2
@@ -125,7 +125,7 @@ export default function WebinarForm() {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
             className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
           >
-            Join our live session and learn about our trading strategies
+            Master the RSI Decision-Making System and filter quality trades instantly
           </motion.p>
         </div>
 
@@ -169,7 +169,7 @@ export default function WebinarForm() {
               Register for Free Webinar
             </h2>
             <p className="text-sm text-neutral-500 mb-3 font-medium">
-              Access our live session, insights, and trading strategies
+              Master the RSI decision-making system and filter quality trades instantly
             </p>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -239,6 +239,18 @@ export default function WebinarForm() {
               >
                 Register Now
               </button>
+
+              <a
+                href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-0 bg-[#25D366] hover:bg-[#20bd5a] duration-300 text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98] flex items-center justify-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+                Join WhatsApp Community
+              </a>
             </form>
           </div>
         </div>

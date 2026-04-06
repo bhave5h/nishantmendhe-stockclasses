@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full py-5 md:py-20 px-6 bg-white relative"
+      className="w-full py-5 md:py-10 px-6 bg-white relative"
     >
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-16 p-10">
         {/* Left Side: Text */}
@@ -19,7 +19,7 @@ export default function About() {
           </FadeUp>
 
           <FadeUp delay={0.1}>
-            <div className="text-neutral-500 text-lg md:text-xl leading-relaxed lg:pr-10">
+            <div className="text-neutral-500 text-lg md:text-xl">
               {content.about.description.split("__").map((paragraph, idx) => (
                 <p key={idx} className={idx > 0 ? "mt-4" : ""}>
                   {paragraph}

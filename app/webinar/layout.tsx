@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Join Nishant Mendhe for Stock Trading Basics",
-  description: "Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.",
+  title: "Join Nisshant Menddhe for Free Stock Trading Webinar - RSI Strategy",
+  description: "Learn how to use RSI as a Decision-Making System and filter quality trades instantly. Join our free live session and avoid common trading mistakes.",
   openGraph: {
-    title: "Join Nishant Mendhe for Stock Trading Basics",
-    description: "Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.",
+    title: "Join Nisshant Menddhe for Free Stock Trading Webinar",
+    description: "Learn how to use RSI as a Decision-Making System and filter quality trades instantly. Join our free live session and avoid common trading mistakes.",
     url: "https://www.nishantmendhe.in/webinar",
     siteName: "Nishant Mendhe Stock Market Training",
     images: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Join Nishant Mendhe for Stock Trading Basics",
-    description: "Learn the fundamentals of stock trading and understand how to build a strong foundation in the financial markets with guidance from Nishant Mendhe.",
+    title: "Join Nisshant Menddhe for Free Stock Trading Webinar - RSI Strategy",
+    description: "Learn how to use RSI as a Decision-Making System and filter quality trades instantly. Join our free live session and avoid common trading mistakes.",
     images: ["/Images/OG/webinar.png"],
   },
 };

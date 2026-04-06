@@ -154,7 +154,7 @@ export default function Home() {
                     For Updates:
                   </span>
                   <span className="font-bold text-base md:text-lg leading-tight">
-                    <Link href="https://www.instagram.com/nisshantmenddhe.trader/">Instagram</Link>
+                    <Link href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t">WhatsApp</Link>
                   </span>
                 </div>
               </div>
@@ -173,17 +173,19 @@ export default function Home() {
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
             <p className="text-[20px] md:text-xl lg:text-[25px] font-bold mb-2 text-black opacity-80">
-              At this program, you will learn to:
+              In this FREE webinar, you’ll discover:
             </p>
             <ul className="text-base md:text-lg lg:text-xl space-y-1 font-bold text-black opacity-60 text-left inline-block">
-              <li>1. How to find multibagger stock</li>
-              <li>2. How to use RSI Indicator</li>
-              <li>3. How to buy at bottom</li>
-              <li>4. Rsi overbought does not mean sell</li>
-              <li>5. RSI oversold is trap</li>
-              <li>6. Free RSI multibagger scanner</li>
+              <li>1. Why most traders fail even after learning multiple strategies (And how to fix it instantly) </li>
+              <li>2. The biggest mistake traders make while using RSI</li>
+              <li>3. How to use RSI as a Decision-Making System </li>
+              <li>4. The secret behind RSI 40–60 zone that most traders ignore</li>
+              <li>5. Why “RSI Overbought” does NOT mean SELL (And how to trade strong trends correctly)</li>
+              <li> <b></b></li>
             </ul>
           </div>
+
+          <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80 mb-6">Bonus: Free RSI Scanner to filter quality trades instantly</p>
 
           <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-black opacity-70">
             Join our <b> FREE webinar </b> perfect for students, professionals,
@@ -192,11 +194,19 @@ export default function Home() {
           </p>
 
           <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80">
-            Seats are filling rapidly, 74% already booked. Secure your spot now
-            before it’s gone!
+            Reserve Your Free Seat Now (Limited Slots)
           </p>
+          
+
         </div>
+
       </div>
+
+      
+        <p className="text-lg md:text-xl lg:text-[24px] font-extrabold text-black opacity-80 p-10 sm:p-15 italic text-center">
+          “You don’t have a strategy problem. You have a decision-making problem and this webinar will fix it.”
+        </p>
+        
 
       <div>
         <WebinarForm />
