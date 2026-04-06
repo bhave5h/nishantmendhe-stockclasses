@@ -106,7 +106,7 @@ export default function WebinarForm() {
 
   return (
     <section id="registerform">
-      <div className="w-full mt-6 lg:mt-8 p-6 z-20 mb-20 bg-white h-full">
+      <div className="w-full mt-6 lg:mt-8 p-10 z-20 mb-20 bg-white h-full">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-4 md:mb-10">
           <motion.h2

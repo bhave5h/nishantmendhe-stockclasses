@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import content from "@/data/content.json";
@@ -163,7 +161,7 @@ export default function WebinarSection() {
             </div>
 
             {/* ─────────── CTA Button below card ─────────── */}
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center mt-0">
                 <Link
                     href={webinar.ctaLink}
                     target="_blank"

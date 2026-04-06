@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Calendar,
   Clock,
@@ -69,9 +67,14 @@ export default function Home() {
                   className="w-8 h-8 md:w-10 md:h-10 text-[#5EBA3F] shrink-0"
                   strokeWidth={1.5}
                 />
-                <span className="font-bold text-base md:text-lg leading-tight">
-                  23 August 2025
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-sm md:text-base text-gray-400 leading-tight">
+                    Date:
+                  </span>
+                  <span className="font-bold text-base md:text-lg leading-tight">
+                    19 April 2026
+                  </span>
+                </div>  
               </div>
 
               {/* Time */}
@@ -80,9 +83,14 @@ export default function Home() {
                   className="w-8 h-8 md:w-10 md:h-10 text-[#5EBA3F] shrink-0"
                   strokeWidth={1.5}
                 />
-                <span className="font-bold text-base md:text-lg leading-tight">
-                  10:00pm to 12:00am
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-sm md:text-base text-gray-400 leading-tight">
+                    Time:
+                  </span>
+                  <span className="font-bold text-base md:text-lg leading-tight">
+                    11 AM
+                  </span>
+                </div>
               </div>
 
               {/* Location */}
@@ -91,9 +99,14 @@ export default function Home() {
                   className="w-8 h-8 md:w-10 md:h-10 text-[#5EBA3F] shrink-0"
                   strokeWidth={1.5}
                 />
-                <span className="font-bold text-base md:text-lg leading-tight">
-                  Online
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-sm md:text-base text-gray-400 leading-tight">
+                    Mode:
+                  </span>
+                  <span className="font-bold text-base md:text-lg leading-tight">
+                    Online
+                  </span>
+                </div>
               </div>
 
               {/* Platform */}
@@ -141,7 +154,7 @@ export default function Home() {
                     For Updates:
                   </span>
                   <span className="font-bold text-base md:text-lg leading-tight">
-                    Instagram, Facebook
+                    <Link href="https://www.instagram.com/nisshantmenddhe.trader/">Instagram</Link>
                   </span>
                 </div>
               </div>
