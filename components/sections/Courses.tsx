@@ -44,7 +44,7 @@ export default function Courses() {
                             className="flex flex-col bg-white rounded-[24px] overflow-hidden border border-gray-300 shadow-[0px_4px_47px_22px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_4px_47px_-17px_rgba(0,_0,_0,_0.1)] transition-shadow duration-300"
                         >
                             {/* Card Image */}
-                            <div className="relative w-1xl aspect-[4/3]  overflow-hidden">
+                            <div className="relative w-1xl aspect-[4/3] overflow-hidden">
                                 <Image
                                     src={course.image}
                                     alt={course.title}
@@ -92,7 +92,6 @@ export default function Courses() {
                         </motion.div>
                     ))}
                 </div>
-
             </div>
         </section>
     );

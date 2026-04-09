@@ -18,7 +18,7 @@ export default function CoursesPage() {
     return (
         <main className="min-h-screen bg-white pt-20 pb-12">
 
-            
+
             {/* Reuse the existing Courses section component but without its native padding if possible, 
                 actually it has py-10 md:py-15. That's fine. */}
             <CoursesSection />

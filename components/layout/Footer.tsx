@@ -63,8 +63,9 @@ export default function Footer() {
               <Image
                 src="/Images/Logos/Full_logo.svg"
                 alt="Nishant Mendhe Logo"
-                height={100}
-                width={270}
+                width={200}
+                height={50}
+                className="object-contain h-auto w-40px md:w-48 lg:w-56"
               />
             </Link>
             <p className="text-gray-400 leading-relaxed mb-8 max-w-sm">

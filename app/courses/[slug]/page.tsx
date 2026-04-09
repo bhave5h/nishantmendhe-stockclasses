@@ -102,6 +102,10 @@ export default function CourseDetails() {
               razorpayPaymentId: response.razorpay_payment_id,
               razorpayOrderId: response.razorpay_order_id,
               razorpaySignature: response.razorpay_signature,
+              courseName: course.title,
+              userName: name,
+              userPhone: phone,
+              userEmail: email
             };
 
             const result = await fetch("/api/verify", {
