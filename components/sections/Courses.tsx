@@ -70,10 +70,16 @@ export default function Courses() {
                                 <p className="text-lg text-neutral-400 font-semibold leading-relaxed mb-1 flex-grow">
                                     {course.description}
                                 </p>
+                                <p className="text-lg text-green-600 font-bold leading-relaxed mb-1 flex-grow">
+                                    {course.discount}
+                                </p>
 
-                                <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
+                                <div className="pt-3 border-t border-gray-100 flex items-end justify-between">
+                                    <span className="text-[20px] font-bold text-green-600 tracking-tight line-through">
+                                        {course.orgprice}
+                                    </span>
                                     <span className="text-[20px] font-bold text-[#0F172A] tracking-tight opacity-80">
-                                        {course.price}
+                                        {course.price} 
                                     </span>
                                     <Link href={`/courses/${course.id}`} className="flex items-center gap-2 text-[18px] font-semibold text-[#0F172A] hover:text-gray-600 transition-colors group opacity-80">
                                         Enroll Now
