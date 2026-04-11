@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link href="/" className="mb-6 block">
               <Image
-                src="/Images/Logos/Full_logo.svg"
+                src="/Images/Logos/Full_logo.png"
                 alt="Nishant Mendhe Logo"
                 width={200}
                 height={50}

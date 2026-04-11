@@ -74,7 +74,7 @@ export default function Home() {
                   <span className="font-bold text-base md:text-lg leading-tight">
                     19 April 2026
                   </span>
-                </div>  
+                </div>
               </div>
 
               {/* Time */}
@@ -154,7 +154,9 @@ export default function Home() {
                     For Updates:
                   </span>
                   <span className="font-bold text-base md:text-lg leading-tight">
-                    <Link href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t">WhatsApp</Link>
+                    <Link href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t">
+                      WhatsApp
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -173,19 +175,41 @@ export default function Home() {
 
           <div className="mb-6 flex flex-col items-start md:items-center lg:items-start">
             <p className="text-[20px] md:text-xl lg:text-[25px] font-bold mb-2 text-black opacity-80">
-              In this FREE webinar, you’ll discover:
+              In this FREE webinar, you’ll learn how to trade with clarity, confidence, and consistent profits.
             </p>
-            <ul className="text-base md:text-lg lg:text-xl space-y-1 font-bold text-black opacity-60 text-left inline-block">
-              <li>1. Why most traders fail even after learning multiple strategies (And how to fix it instantly) </li>
-              <li>2. The biggest mistake traders make while using RSI</li>
-              <li>3. How to use RSI as a Decision-Making System </li>
-              <li>4. The secret behind RSI 40–60 zone that most traders ignore</li>
-              <li>5. Why “RSI Overbought” does NOT mean SELL (And how to trade strong trends correctly)</li>
-              <li> <b></b></li>
+
+            <ul className="text-base md:text-lg lg:text-xl space-y-2 font-bold text-black opacity-70 text-left inline-block">
+              <li>
+                1. Achieve Consistent Profits instead of relying on luck-based
+                trades
+              </li>
+
+              <li>
+                2. Know Exactly When to Enter & Exit Trades with Complete
+                Clarity
+              </li>
+
+              <li>
+                3. Make Confident Decisions without second-guessing yourself
+              </li>
+
+              <li>
+                4.Trade with Emotional Control No Fear, Greed, or Revenge Trading
+              </li>
+
+              <li>
+                5. Minimize Losses with Strong Risk Management & Capital Protection
+              </li>
+
+              <li>
+                6. Become a Disciplined, System-Driven Trader (not a gambler)
+              </li>
             </ul>
           </div>
 
-          <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80 mb-6">Bonus: Free RSI Scanner to filter quality trades instantly</p>
+          <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80 mb-6">
+            Bonus: Free AI tool to filter quality trades instantly For Lifetime
+          </p>
 
           <p className="text-base md:text-lg lg:text-xl mb-6 font-medium text-black opacity-70">
             Join our <b> FREE webinar </b> perfect for students, professionals,
@@ -196,17 +220,13 @@ export default function Home() {
           <p className="text-lg md:text-xl lg:text-2xl font-extrabold text-black opacity-80">
             Reserve Your Free Seat Now (Limited Slots)
           </p>
-          
-
         </div>
-
       </div>
 
-      
-        <p className="text-lg md:text-xl lg:text-[24px] font-extrabold text-black opacity-80 p-10 sm:p-15 italic text-center">
-          “You don’t have a strategy problem. You have a decision-making problem and this webinar will fix it.”
-        </p>
-        
+      <p className="text-lg md:text-xl lg:text-[24px] font-extrabold text-black opacity-80 p-10 sm:p-15 italic text-center">
+        “You don’t have a strategy problem. You have a decision-making problem
+        and this webinar will fix it.”
+      </p>
 
       <div>
         <WebinarForm />

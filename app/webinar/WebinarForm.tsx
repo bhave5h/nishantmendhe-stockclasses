@@ -67,7 +67,23 @@ export default function WebinarForm() {
     email: "",
     profession: "",
   });
-  const [showModal, setShowModal] = useState(false);
+  const [modalState, setModalState] = useState<'initial_prompt' | 'pending_whatsapp' | 'success' | null>(null);
+  const hasSubmittedRef = useRef(false);
+  const hasClosedInitialPromptRef = useRef(false);
+  const modalStateRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    modalStateRef.current = modalState;
+  }, [modalState]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!hasSubmittedRef.current && !hasClosedInitialPromptRef.current && !modalStateRef.current) {
+        setModalState('initial_prompt');
+      }
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleChange = (e: any) => {
     setForm({
@@ -87,16 +103,17 @@ export default function WebinarForm() {
     formData.append("entry.2052950666", form.email);
     formData.append("entry.1098219313", form.profession);
 
-    await fetch(
+    hasSubmittedRef.current = true;
+    setModalState('pending_whatsapp');
+
+    fetch(
       "https://docs.google.com/forms/d/e/1FAIpQLScCsQGdvOcUNdw6IazOnVmht34J0fWN8fkI950TH_LK3vMx3A/formResponse",
       {
         method: "POST",
         mode: "no-cors",
         body: formData,
       },
-    );
-
-    setShowModal(true);
+    ).catch(console.error);
 
     setForm({
       name: "",
@@ -104,6 +121,17 @@ export default function WebinarForm() {
       email: "",
       profession: "",
     });
+  };
+
+  const handleJoinInitialWhatsApp = () => {
+    hasClosedInitialPromptRef.current = true;
+    window.open("https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t", "_blank");
+    setModalState(null);
+  };
+
+  const handleJoinWhatsAppAndComplete = () => {
+    window.open("https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t", "_blank");
+    setModalState('success');
   };
 
   return (
@@ -122,12 +150,12 @@ export default function WebinarForm() {
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 0.8, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-            className="text-l md:text-[18px] text-neutral-500 lg:leading-10 md:leading-8 sm:leading-5 font-semibold"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="text-sm md:text-xl lg:text-1xl font-bold mb-3 text-neutral-800 leading-[1.1]"
           >
-            Master the RSI Decision-Making System and filter quality trades instantly
+            "Make Your Trading Journey Profitable"
           </motion.p>
         </div>
 
@@ -144,7 +172,7 @@ export default function WebinarForm() {
               onClick={handleVideoClick}
               className="absolute inset-0 w-full h-full object-cover z-0 cursor-pointer"
             >
-              <source src="/Images/Webinar/intro.webm" type="video/webm" />
+              <source src="/Images/Webinar/intro.webm" type="video/webm"/>
             </video>
 
             {/* Overlay Gradients */}
@@ -170,10 +198,6 @@ export default function WebinarForm() {
             <h2 className="text-2xl md:text-2xl font-bold text-neutral-900 mb-2 tracking-tight">
               Register for Free Webinar
             </h2>
-            <p className="text-sm text-neutral-500 mb-3 font-medium">
-              Master the RSI decision-making system and filter quality trades instantly
-            </p>
-
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div className="flex flex-col gap-1.5">
                 <label className="text-[13px] text-neutral-700 font-bold">
@@ -240,6 +264,13 @@ export default function WebinarForm() {
               >
                 Register Now
               </button>
+              <p className="text-neutral-600 text-lg font-bold text-center mt-1">
+                OR
+              </p>
+
+              <p className="text-neutral-600 text-lg font-bold text-center mt-1">
+                  Join our WhatsApp community for <span className="text-green-600">Registration</span>
+              </p>
 
               <a
                 href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t"
@@ -250,7 +281,7 @@ export default function WebinarForm() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                 </svg>
-                Join WhatsApp Community
+                Join Now !!!
               </a>
             </form>
           </div>
@@ -258,7 +289,7 @@ export default function WebinarForm() {
       </div>
 
       <AnimatePresence>
-        {showModal && (
+        {modalState && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -267,7 +298,10 @@ export default function WebinarForm() {
               className="bg-white rounded-2xl p-6 md:p-8 max-w-md w-full shadow-2xl relative flex flex-col items-center text-center"
             >
               <button 
-                onClick={() => setShowModal(false)}
+                onClick={() => {
+                  if (modalState === 'initial_prompt') hasClosedInitialPromptRef.current = true;
+                  setModalState(null);
+                }}
                 className="absolute top-4 right-4 text-neutral-400 hover:text-neutral-600 transition-colors"
                 type="button"
               >
@@ -275,29 +309,72 @@ export default function WebinarForm() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-500">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-neutral-900 mb-2">Registration Successful!</h3>
-              <p className="text-neutral-600 mb-6">
-                Thank you for registering. Join our WhatsApp community to get the webinar link and exclusive updates.
-              </p>
-              <a 
-                href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setShowModal(false)}
-                className="w-full"
-              >
-                <SmoothButton variant="default" className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-6 text-base">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                  </svg>
-                  Join WhatsApp Community
-                </SmoothButton>
-              </a>
+
+              {modalState === 'initial_prompt' && (
+                <>
+                  <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mb-4 text-[#25D366]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-2">Secure Your Webinar Spot Now !!! </h3>
+                  <p className="text-neutral-600 mb-6">
+                     Join our WhatsApp community to confirm your Registration
+                  </p>
+                  <div onClick={handleJoinInitialWhatsApp} className="w-max mx-auto cursor-pointer">
+                    <SmoothButton variant="default" className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-6 text-base flex items-center justify-center gap-2">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg>
+                      Join Now !!!
+                    </SmoothButton>
+                  </div>
+                </>
+              )}
+
+              {modalState === 'pending_whatsapp' && (
+                <>
+                  <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mb-4 text-orange-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-2">Almost Done!</h3>
+                  <p className="text-neutral-600 mb-6">
+                    To complete your registration and receive the webinar link, you <strong>must</strong> join our WhatsApp community.
+                  </p>
+                  <div onClick={handleJoinWhatsAppAndComplete} className="w-full cursor-pointer">
+                    <SmoothButton variant="default" className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-6 text-base flex items-center justify-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg>
+                      Join WhatsApp & Complete Registration
+                    </SmoothButton>
+                  </div>
+                </>
+              )}
+
+              {modalState === 'success' && (
+                <>
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-2">Registration Successful!</h3>
+                  <p className="text-neutral-600 mb-6">
+                    Thank you for joining the community. Your registration is confirmed!
+                  </p>
+                  <div 
+                    onClick={() => setModalState(null)}
+                    className="w-full cursor-pointer"
+                  >
+                    <SmoothButton variant="default" className="w-full bg-black hover:bg-neutral-800 text-white py-6 text-base">
+                      Got it
+                    </SmoothButton>
+                  </div>
+                </>
+              )}
             </motion.div>
           </div>
         )}
