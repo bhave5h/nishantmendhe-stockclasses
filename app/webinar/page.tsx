@@ -72,7 +72,7 @@ export default function Home() {
                     Date:
                   </span>
                   <span className="font-bold text-base md:text-lg leading-tight">
-                    19 April 2026
+                    26 April 2026
                   </span>
                 </div>
               </div>
