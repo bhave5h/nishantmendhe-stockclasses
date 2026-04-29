@@ -72,7 +72,7 @@ export default function Home() {
                     Date:
                   </span>
                   <span className="font-bold text-base md:text-lg leading-tight">
-                    26 April 2026
+                    3 May 2026
                   </span>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function Home() {
                     Live On
                   </span>
                   <span className="font-bold text-base md:text-lg leading-tight">
-                    Google Meet
+                    Zoom 
                   </span>
                 </div>
               </div>
