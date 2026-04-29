@@ -25,6 +25,8 @@ export default function Home() {
     <main
       className={`relative min-h-screen w-full overflow-x-hidden flex flex-col items-center pt-8 lg:pt-12 pb-8 bg-white ${montserrat.className} text-black`}
     >
+      <div>
+
       <SlideUpBg className="absolute top-0 left-0 w-full h-[100vh] z-[0] pointer-events-none">
         <Image
           src={bgImg2}
@@ -227,6 +229,8 @@ export default function Home() {
         “You don’t have a strategy problem. You have a decision-making problem
         and this webinar will fix it.”
       </p>
+
+      </div>
 
       <div>
         <WebinarForm />

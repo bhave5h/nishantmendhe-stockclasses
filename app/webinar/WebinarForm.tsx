@@ -125,12 +125,12 @@ export default function WebinarForm() {
 
   const handleJoinInitialWhatsApp = () => {
     hasClosedInitialPromptRef.current = true;
-    window.open("https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t", "_blank");
+    window.open("https://chat.whatsapp.com/IFj5l3oYmPBG8etQVnST41?mode=gi_t", "_blank");
     setModalState(null);
   };
 
   const handleJoinWhatsAppAndComplete = () => {
-    window.open("https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t", "_blank");
+    window.open("https://chat.whatsapp.com/IFj5l3oYmPBG8etQVnST41?mode=gi_t", "_blank");
     setModalState('success');
   };
 
@@ -273,7 +273,7 @@ export default function WebinarForm() {
               </p>
 
               <a
-                href="https://chat.whatsapp.com/JaIK884vLL15V1wguyq61Y?mode=gi_t"
+                href="https://chat.whatsapp.com/IFj5l3oYmPBG8etQVnST41?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-0 bg-[#25D366] hover:bg-[#20bd5a] duration-300 text-white font-bold text-sm py-4 px-6 rounded-lg shadow-[0_4px_14px_0_rgb(0,0,0,0.2)] transition-all active:scale-[0.98] flex items-center justify-center gap-2"
