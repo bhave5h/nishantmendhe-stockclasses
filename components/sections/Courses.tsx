@@ -74,20 +74,18 @@ export default function Courses() {
                                     {course.discount}
                                 </p>
 
-                                <div className="pt-3 border-t border-gray-100 flex items-end justify-between">
+                                <div className="pt-4 pb-4 border-t border-gray-100 flex items-end justify-between mt-auto">
                                     <span className="text-[20px] font-bold text-green-600 tracking-tight line-through">
                                         {course.orgprice}
                                     </span>
-                                    <span className="text-[20px] font-bold text-[#0F172A] tracking-tight opacity-80">
+                                    <span className="text-[24px] font-bold text-[#0F172A] tracking-tight">
                                         {course.price} 
                                     </span>
-                                    <Link href={`/courses/${course.id}`} className="flex items-center gap-2 text-[18px] font-semibold text-[#0F172A] hover:text-gray-600 transition-colors group opacity-80">
-                                        Enroll Now
-                                        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                        </svg>
-                                    </Link>
                                 </div>
+
+                                <Link href={`/courses/${course.id}`} className="w-fit p-4 bg-black h-[54px] flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-[1.02] hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff] text-lg font-semibold tracking-wide">
+                                    Enroll Now
+                                </Link>
                             </div>
                         </motion.div>
                     ))}
