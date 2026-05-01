@@ -335,7 +335,7 @@ export default function CourseDetails() {
                             </p>
                             
                             <a
-                                href="https://chat.whatsapp.com/Jh4BdsNxf98IkXgGxksKOS"
+                                href={course.group || "https://chat.whatsapp.com/Jh4BdsNxf98IkXgGxksKOS"}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-4 px-6 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors"
