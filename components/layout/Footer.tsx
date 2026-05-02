@@ -162,6 +162,14 @@ export default function Footer() {
                   FAQs
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/privacy-policy"
+                  className="text-gray-400 hover:text-white transition-colors duration-200 block w-max"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
